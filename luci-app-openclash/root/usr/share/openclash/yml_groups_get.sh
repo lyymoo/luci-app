@@ -218,8 +218,32 @@ do
    }.join;
    
    Thread.new{
+   #Policy Filter
+   if Value['proxy-groups'][$count].key?('filter') then
+      policy_filter = '${uci_set}policy_filter=' + Value['proxy-groups'][$count]['filter'].to_s
+      system(policy_filter)
+   end
+   }.join;
+   
+   Thread.new{
+   #interface-name
+   if Value['proxy-groups'][$count].key?('interface-name') then
+      interface_name = '${uci_set}interface_name=' + Value['proxy-groups'][$count]['interface-name'].to_s
+      system(interface_name)
+   end
+   }.join;
+   
+   Thread.new{
+   #routing-mark
+   if Value['proxy-groups'][$count].key?('routing-mark') then
+      routing_mark = '${uci_set}routing_mark=' + Value['proxy-groups'][$count]['routing-mark'].to_s
+      system(routing_mark)
+   end
+   }.join;
+   
+   Thread.new{
    #other_group
-   Value_1=YAML.load_file('/tmp/Proxy_Group'); 
+   Value_1 = File.readlines('/tmp/Proxy_Group').map!{|x| x.strip}; 
 	 if Value['proxy-groups'][$count].key?('proxies') then 
 	    Value['proxy-groups'][$count]['proxies'].each{
 	    |x|
@@ -231,7 +255,7 @@ do
 	 end
 	 }.join;
    rescue Exception => e
-   puts '${LOGTIME} Error: Resolve Proxy-group Error,【${CONFIG_NAME} - ${group_type} - ${group_name}: ' + e.message + '】'
+   puts '${LOGTIME} Error: Resolve Groups Failed,【${CONFIG_NAME} - ${group_type} - ${group_name}: ' + e.message + '】'
    end
    " 2>/dev/null >> $LOG_FILE &
    

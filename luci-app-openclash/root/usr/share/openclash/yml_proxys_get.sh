@@ -302,7 +302,7 @@ do
    }.join;
       
    rescue Exception => e
-   puts '${LOGTIME} Error: Resolve Proxy-provider Error,【${CONFIG_NAME} - ${provider_name}: ' + e.message + '】'
+   puts '${LOGTIME} Error: Resolve Proxy-providers Failed,【${CONFIG_NAME} - ${provider_name}: ' + e.message + '】'
    end
    " 2>/dev/null >> $LOG_FILE &
       
@@ -331,7 +331,7 @@ do
          end
          };
       rescue Exception => e
-      puts '${LOGTIME} Error: Resolve Proxy-provider Error,【${CONFIG_NAME} - ${provider_name}: ' + e.message + '】'
+      puts '${LOGTIME} Error: Resolve Proxy-providers Failed,【${CONFIG_NAME} - ${provider_name}: ' + e.message + '】'
       end
       }.join;
       " 2>/dev/null >> $LOG_FILE &
@@ -539,7 +539,11 @@ do
       Thread.new{
       #cipher
       if Value['proxies'][$count].key?('cipher') then
-         cipher = '${uci_set}cipher_ssr=' + Value['proxies'][$count]['cipher'].to_s
+         if Value['proxies'][$count]['cipher'].to_s == 'none' then
+            cipher = '${uci_set}cipher_ssr=dummy'
+         else
+            cipher = '${uci_set}cipher_ssr=' + Value['proxies'][$count]['cipher'].to_s
+         end
          system(cipher)
       end
       }.join
@@ -723,6 +727,216 @@ do
       end
       }.join
    end;
+
+   if '$server_type' == 'hysteria' then
+      Thread.new{
+      #hysteria_protocol
+      if Value['proxies'][$count].key?('protocol') then
+         hysteria_protocol = '${uci_set}hysteria_protocol=' + Value['proxies'][$count]['protocol'].to_s
+         system(hysteria_protocol)
+      end
+      }.join
+
+      Thread.new{
+      #up_mbps
+      if Value['proxies'][$count].key?('up_mbps') then
+         up_mbps = '${uci_set}up_mbps=' + Value['proxies'][$count]['up_mbps'].to_s
+         system(up_mbps)
+      end
+      }.join
+
+      Thread.new{
+      #down_mbps
+      if Value['proxies'][$count].key?('down_mbps') then
+         down_mbps = '${uci_set}down_mbps=' + Value['proxies'][$count]['down_mbps'].to_s
+         system(down_mbps)
+      end
+      }.join
+
+      Thread.new{
+      #hysteria_up
+      if Value['proxies'][$count].key?('up') then
+         hysteria_up = '${uci_set}hysteria_up=' + Value['proxies'][$count]['up'].to_s
+         system(hysteria_up)
+      end
+      }.join
+
+      Thread.new{
+      #hysteria_down
+      if Value['proxies'][$count].key?('down') then
+         hysteria_down = '${uci_set}hysteria_down=' + Value['proxies'][$count]['down'].to_s
+         system(hysteria_down)
+      end
+      }.join
+
+      Thread.new{
+      #skip-cert-verify
+      if Value['proxies'][$count].key?('skip-cert-verify') then
+         skip_cert_verify = '${uci_set}skip_cert_verify=' + Value['proxies'][$count]['skip-cert-verify'].to_s
+         system(skip_cert_verify)
+      end
+      }.join
+
+      Thread.new{
+      #sni
+      if Value['proxies'][$count].key?('sni') then
+         sni = '${uci_set}sni=\"' + Value['proxies'][$count]['sni'].to_s + '\"'
+         system(sni)
+      end
+      }.join
+
+      Thread.new{
+      #alpn
+      if Value['proxies'][$count].key?('alpn') then
+         alpn = '${uci_set}hysteria_alpn=\"' + Value['proxies'][$count]['alpn'].to_s + '\"'
+         system(alpn)
+      end
+      }.join
+
+      Thread.new{
+      #recv_window_conn
+      if Value['proxies'][$count].key?('recv_window_conn') then
+         recv_window_conn = '${uci_set}recv_window_conn=' + Value['proxies'][$count]['recv_window_conn'].to_s
+         system(recv_window_conn)
+      end
+      }.join
+
+      Thread.new{
+      #recv_window
+      if Value['proxies'][$count].key?('recv_window') then
+         recv_window = '${uci_set}recv_window=' + Value['proxies'][$count]['recv_window'].to_s
+         system(recv_window)
+      end
+      }.join
+
+      Thread.new{
+      #hysteria_obfs
+      if Value['proxies'][$count].key?('obfs') then
+         hysteria_obfs = '${uci_set}hysteria_obfs=' + Value['proxies'][$count]['obfs'].to_s
+         system(hysteria_obfs)
+      end
+      }.join
+
+      Thread.new{
+      #hysteria_auth
+      if Value['proxies'][$count].key?('auth') then
+         hysteria_auth = '${uci_set}hysteria_auth=' + Value['proxies'][$count]['auth'].to_s
+         system(hysteria_auth)
+      end
+      }.join
+
+      Thread.new{
+      #hysteria_auth_str
+      if Value['proxies'][$count].key?('auth_str') then
+         hysteria_auth_str = '${uci_set}hysteria_auth_str=' + Value['proxies'][$count]['auth_str'].to_s
+         system(hysteria_auth_str)
+      end
+      }.join
+
+      Thread.new{
+      #hysteria_ca
+      if Value['proxies'][$count].key?('ca') then
+         hysteria_ca = '${uci_set}hysteria_ca=' + Value['proxies'][$count]['ca'].to_s
+         system(hysteria_ca)
+      end
+      }.join
+
+      Thread.new{
+      #hysteria_ca_str
+      if Value['proxies'][$count].key?('ca_str') then
+         hysteria_ca_str = '${uci_set}hysteria_ca_str=' + Value['proxies'][$count]['ca_str'].to_s
+         system(hysteria_ca_str)
+      end
+      }.join
+
+      Thread.new{
+      #disable_mtu_discovery
+      if Value['proxies'][$count].key?('disable_mtu_discovery') then
+         disable_mtu_discovery = '${uci_set}disable_mtu_discovery=' + Value['proxies'][$count]['disable_mtu_discovery'].to_s
+         system(disable_mtu_discovery)
+      end
+      }.join
+
+   end;
+
+   if '$server_type' == 'vless' then
+      Thread.new{
+      #uuid
+      if Value['proxies'][$count].key?('uuid') then
+         uuid = '${uci_set}uuid=' + Value['proxies'][$count]['uuid'].to_s
+         system(uuid)
+      end
+      }.join
+      
+      Thread.new{
+      #tls
+      if Value['proxies'][$count].key?('tls') then
+         tls = '${uci_set}tls=' + Value['proxies'][$count]['tls'].to_s
+         system(tls)
+      end
+      }.join
+      
+      Thread.new{
+      #skip-cert-verify
+      if Value['proxies'][$count].key?('skip-cert-verify') then
+         skip_cert_verify = '${uci_set}skip_cert_verify=' + Value['proxies'][$count]['skip-cert-verify'].to_s
+         system(skip_cert_verify)
+      end
+      }.join
+      
+      Thread.new{
+      #servername
+      if Value['proxies'][$count].key?('servername') then
+         servername = '${uci_set}servername=\"' + Value['proxies'][$count]['servername'].to_s + '\"'
+         system(servername)
+      end
+      }.join
+      
+      Thread.new{
+      #flow
+      if Value['proxies'][$count].key?('flow') then
+         flow = '${uci_set}vless_flow=\"' + Value['proxies'][$count]['flow'].to_s + '\"'
+         system(flow)
+      end
+      }.join
+      
+      Thread.new{
+      #network:
+      if Value['proxies'][$count].key?('network') then
+         if Value['proxies'][$count]['network'].to_s == 'ws'
+            system '${uci_set}obfs_vless=ws'
+            #ws-opts-path:
+            if Value['proxies'][$count].key?('ws-opts') then
+               if Value['proxies'][$count]['ws-opts'].key?('path') then
+                  ws_opts_path = '${uci_set}ws_opts_path=\"' + Value['proxies'][$count]['ws-opts']['path'].to_s + '\"'
+                  system(ws_opts_path)
+               end
+               #ws-opts-headers:
+               if Value['proxies'][$count]['ws-opts'].key?('headers') then
+                  system '${uci_del}ws_opts_headers >/dev/null 2>&1'
+                  Value['proxies'][$count]['ws-opts']['headers'].keys.each{
+                  |v|
+                     ws_opts_headers = '${uci_add}ws_opts_headers=\"' + v.to_s + ': '+ Value['proxies'][$count]['ws-opts']['headers'][v].to_s + '\"'
+                     system(ws_opts_headers)
+                  }
+               end
+            end
+         elsif Value['proxies'][$count]['network'].to_s == 'grpc'
+            #grpc-service-name
+            system '${uci_set}obfs_vless=grpc'
+            if Value['proxies'][$count].key?('grpc-opts') then
+               if Value['proxies'][$count]['grpc-opts'].key?('grpc-service-name') then
+                  grpc_service_name = '${uci_set}grpc_service_name=\"' + Value['proxies'][$count]['grpc-opts']['grpc-service-name'].to_s + '\"'
+                  system(grpc_service_name)
+               end
+            end
+         else
+            system '${uci_set}obfs_vless=none'
+         end
+      end
+      }.join
+   end;
+
    if '$server_type' == 'snell' then
       Thread.new{
       if Value['proxies'][$count].key?('obfs-opts') then
@@ -743,6 +957,13 @@ do
       if Value['proxies'][$count].key?('psk') then
          psk = '${uci_set}psk=' + Value['proxies'][$count]['psk'].to_s
          system(psk)
+      end
+      }.join
+      
+      Thread.new{
+      if Value['proxies'][$count].key?('version') then
+         snell_version = '${uci_set}snell_version=' + Value['proxies'][$count]['version'].to_s
+         system(snell_version)
       end
       }.join
    end;
@@ -776,6 +997,18 @@ do
          system(skip_cert_verify)
       end
       }.join
+
+      Thread.new{
+      #http-headers:
+      if Value['proxies'][$count].key?('headers') then
+         system '${uci_del}http_headers >/dev/null 2>&1'
+         Value['proxies'][$count]['headers'].keys.each{
+         |v|
+            http_headers = '${uci_add}http_headers=\"' + v.to_s + ': '+ Value['proxies'][$count]['headers'][v].to_s + '\"'
+            system(http_headers)
+         }
+      end
+      }.join
    else
       Thread.new{
       if Value['proxies'][$count].key?('password') then
@@ -783,7 +1016,7 @@ do
          system(password)
       end
       }.join
-	 end;
+	end;
    if '$server_type' == 'http' or '$server_type' == 'trojan' then
       Thread.new{
       if Value['proxies'][$count].key?('sni') then
@@ -846,7 +1079,7 @@ do
    end;
    
    rescue Exception => e
-   puts '${LOGTIME} Error: Resolve Proxy Error,【${CONFIG_NAME} - ${server_type} - ${server_name}: ' + e.message + '】'
+   puts '${LOGTIME} Error: Resolve Proxies Failed,【${CONFIG_NAME} - ${server_type} - ${server_name}: ' + e.message + '】'
    end
    " 2>/dev/null >> $LOG_FILE &
    
@@ -892,7 +1125,7 @@ do
          end
          };
       rescue Exception => e
-      puts '${LOGTIME} Error: Resolve Proxy Error,【${CONFIG_NAME} - ${server_type} - ${server_name}: ' + e.message + '】'
+      puts '${LOGTIME} Error: Resolve Proxies Failed,【${CONFIG_NAME} - ${server_type} - ${server_name}: ' + e.message + '】'
       end
       }.join;
       " 2>/dev/null >> $LOG_FILE &

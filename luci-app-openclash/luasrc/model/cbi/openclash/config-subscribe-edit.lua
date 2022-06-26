@@ -23,7 +23,7 @@ m.description=translate("Convert Subscribe function of Online is Supported By su
 "<br/>"..
 "<br/>"..translate("If you need to customize the external configuration file (subscription conversion template), please write it according to the instructions, upload it to the accessible location of the external network, and fill in the address correctly when using it")..
 "<br/>"..
-"<br/>"..translate("If you have a recommended external configuration file (subscription conversion template), you can modify by following The file format of /usr/share/opencrash/res/sub_ini.list and pr")
+"<br/>"..translate("If you have a recommended external configuration file (subscription conversion template), you can modify by following The file format of /usr/share/openclash/res/sub_ini.list and pr")
 m.redirect = luci.dispatcher.build_url("admin/services/openclash/config-subscribe")
 if m.uci:get(openclash, sid) ~= "config_subscribe" then
 	luci.http.redirect(m.redirect)
@@ -43,24 +43,62 @@ o.rmempty = true
 
 ---- address
 o = s:option(Value, "address", translate("Subscribe Address"))
-o.description = font_red..bold_on..translate("Not Null")..bold_off..font_off
+o.template = "cbi/tvalue"
+o.rows = 10
+o.wrap = "off"
+o.description = font_red..bold_on..translate("SS/SSR/Vmess or Other Link And Subscription Address is Supported When Online Subscription Conversion is Enabled, Multiple Links Should be One Per Line or Separated By |")..bold_off..font_off
 o.placeholder = translate("Not Null")
-o.datatype = "or(host, string)"
 o.rmempty = false
+function o.validate(self, value)
+	if value then
+		value = value:gsub("\r\n?", "\n")
+		value = value:gsub("%c*$", "")
+	end
+	return value
+end
+
+local sub_path = "/tmp/dler_sub"
+local info, token, get_sub, sub_info
+local token = uci:get("openclash", "config", "dler_token")
+if token then
+	get_sub = string.format("curl -sL -H 'Content-Type: application/json' --connect-timeout 2 -d '{\"access_token\":\"%s\"}' -X POST https://dler.cloud/api/v1/managed/clash -o %s", token, sub_path)
+	if not nixio.fs.access(sub_path) then
+		luci.sys.exec(get_sub)
+	else
+		if fs.readfile(sub_path) == "" or not fs.readfile(sub_path) then
+			luci.sys.exec(get_sub)
+		end
+	end
+	sub_info = fs.readfile(sub_path)
+	if sub_info then
+		sub_info = json.parse(sub_info)
+	end
+	if sub_info and sub_info.ret == 200 then
+		o:value(sub_info.smart)
+		o:value(sub_info.ss)
+		o:value(sub_info.vmess)
+		o:value(sub_info.trojan)
+	else
+		fs.unlink(sub_path)
+	end
+end
 	
 ---- subconverter
 o = s:option(Flag, "sub_convert", translate("Subscribe Convert Online"))
 o.description = translate("Convert Subscribe Online With Template, Mix Proxies and Keep Settings options Will Not Effect")
-o.default=0
+o.default = 0
 
 ---- Convert Address
 o = s:option(Value, "convert_address", translate("Convert Address"))
 o.rmempty     = true
 o.description = font_red..bold_on..translate("Note: There is A Risk of Privacy Leakage in Online Convert")..bold_off..font_off
 o:depends("sub_convert", "1")
+o:value("https://api.dler.io/sub", translate("api.dler.io")..translate("(Default)"))
 o:value("https://subconverter.herokuapp.com/sub", translate("subconverter.herokuapp.com")..translate("(Default)"))
+o:value("https://v.id9.cc/sub", translate("v.id9.cc")..translate("(Support Vless By Pinyun)"))
 o:value("https://sub.id9.cc/sub", translate("sub.id9.cc"))
 o:value("https://api.wcc.best/sub", translate("api.wcc.best"))
+o.default = "https://api.dler.io/sub"
 
 ---- Template
 o = s:option(ListValue, "template", translate("Template Name"))
@@ -87,7 +125,7 @@ o = s:option(ListValue, "emoji", translate("Emoji"))
 o.rmempty     = false
 o:value("false", translate("Disable"))
 o:value("true", translate("Enable"))
-o.default=0
+o.default = "false"
 o:depends("sub_convert", "1")
 
 ---- udp
@@ -95,7 +133,7 @@ o = s:option(ListValue, "udp", translate("UDP Enable"))
 o.rmempty     = false
 o:value("false", translate("Disable"))
 o:value("true", translate("Enable"))
-o.default=0
+o.default = "false"
 o:depends("sub_convert", "1")
 
 ---- skip-cert-verify
@@ -103,7 +141,7 @@ o = s:option(ListValue, "skip_cert_verify", translate("skip-cert-verify"))
 o.rmempty     = false
 o:value("false", translate("Disable"))
 o:value("true", translate("Enable"))
-o.default=0
+o.default = "false"
 o:depends("sub_convert", "1")
 
 ---- sort
@@ -111,7 +149,7 @@ o = s:option(ListValue, "sort", translate("Sort"))
 o.rmempty     = false
 o:value("false", translate("Disable"))
 o:value("true", translate("Enable"))
-o.default=0
+o.default = "false"
 o:depends("sub_convert", "1")
 
 ---- node type
@@ -119,7 +157,16 @@ o = s:option(ListValue, "node_type", translate("Append Node Type"))
 o.rmempty     = false
 o:value("false", translate("Disable"))
 o:value("true", translate("Enable"))
-o.default=0
+o.default = "false"
+o:depends("sub_convert", "1")
+
+---- rule provider
+o = s:option(ListValue, "rule_provider", translate("Use Rule Provider"))
+o.description = font_red..bold_on..translate("Note: Please Make Sure Backend Service Supports This Feature")..bold_off..font_off
+o.rmempty     = false
+o:value("false", translate("Disable"))
+o:value("true", translate("Enable"))
+o.default = "false"
 o:depends("sub_convert", "1")
 
 ---- key
@@ -135,6 +182,7 @@ o.rmempty = true
 ---- de_exkey
 o = s:option(MultiValue, "de_ex_keyword", font_red..bold_on..translate("Exclude Keyword Match Default")..bold_off..font_off)
 o.rmempty = true
+o:depends("sub_convert", 0)
 o:value("过期时间")
 o:value("剩余流量")
 o:value("TG群")

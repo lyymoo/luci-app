@@ -71,3 +71,20 @@ git pull
 
 make menuconfig
 ```
+
+# 开发环境构建
+```
+ln -s ~/luci-app/luci-app-openclash/luasrc/openclash.lua /usr/lib/lua/luci/
+ln -s ~/luci-app/luci-app-openclash/luasrc/controller/openclash.lua /usr/lib/lua/luci/controller/
+ln -s ~/luci-app/luci-app-openclash/luasrc/model/cbi/openclash /usr/lib/lua/luci/model/cbi/
+ln -s /root/luci-app/luci-app-openclash/luasrc/view/openclash /usr/lib/lua/luci/view/
+
+ln -s /root/luci-app/luci-app-openclash/root/etc/config/openclash /etc/config/openclash
+ln -s /root/luci-app/luci-app-openclash/root/etc/init.d/openclash /etc/init.d/openclash
+ln -s /root/luci-app/luci-app-openclash/root/etc/uci-defaults/luci-openclash /etc/uci-defaults/luci-openclash
+
+ln -s /root/luci-app/luci-app-openclash/root/usr/share/rpcd/acl.d/luci-app-openclash.json /usr/share/rpcd/acl.d
+ln -s /root/luci-app/luci-app-openclash/root/usr/share/openclash /usr/share/
+
+ln -s /root/luci-app/luci-app-openclash/root/www/luci-static/resources/openclash /www/luci-static/resources/
+```
