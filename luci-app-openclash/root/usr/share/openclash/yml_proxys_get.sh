@@ -27,13 +27,13 @@ sub_info_get()
 ruby_read_hash()
 {
    RUBY_YAML_PARSE="Thread.new{Value = $1; puts Value$2}.join"
-   ruby -ryaml -E UTF-8 -e "$RUBY_YAML_PARSE" 2>/dev/null
+   ruby -ryaml -rYAML -I "/usr/share/openclash" -E UTF-8 -e "$RUBY_YAML_PARSE" 2>/dev/null
 }
 
 ruby_read()
 {
    RUBY_YAML_PARSE="Thread.new{Value = YAML.load_file('$1'); puts Value$2}.join"
-   ruby -ryaml -E UTF-8 -e "$RUBY_YAML_PARSE" 2>/dev/null
+   ruby -ryaml -rYAML -I "/usr/share/openclash" -E UTF-8 -e "$RUBY_YAML_PARSE" 2>/dev/null
 }
 
 CONFIG_FILE=$(uci get openclash.config.config_path 2>/dev/null)
@@ -232,7 +232,7 @@ do
       ${uci_set}name="$provider_name"
       ${uci_set}type="$provider_type"
    fi
-   ruby -ryaml -E UTF-8 -e "
+   ruby -ryaml -rYAML -I "/usr/share/openclash" -E UTF-8 -e "
    begin
    Value = $proxy_hash;
    Thread.new{
@@ -312,7 +312,7 @@ do
       config_load "openclash"
       config_list_foreach "config" "new_servers_group" cfg_new_provider_groups_get
    elif [ "$servers_if_update" != "1" ]; then
-      ruby -ryaml -E UTF-8 -e "
+      ruby -ryaml -rYAML -I "/usr/share/openclash" -E UTF-8 -e "
       Thread.new{
       begin
          Value = ${group_hash};
@@ -435,7 +435,7 @@ do
       ${uci_set}type="$server_type"
    fi
 
-   ruby -ryaml -E UTF-8 -e "
+   ruby -ryaml -rYAML -I "/usr/share/openclash" -E UTF-8 -e "
    begin
    Value = $proxy_hash;
    Thread.new{
@@ -604,6 +604,38 @@ do
          system(cipher)
       end
       }.join
+      
+      Thread.new{
+      #xudp
+      if Value['proxies'][$count].key?('xudp') then
+         xudp = '${uci_set}xudp=' + Value['proxies'][$count]['xudp'].to_s
+         system(xudp)
+      end
+      }.join;
+
+      Thread.new{
+      #packet_encoding
+      if Value['proxies'][$count].key?('packet-encoding') then
+         packet_encoding = '${uci_set}packet_encoding=' + Value['proxies'][$count]['packet-encoding'].to_s
+         system(packet_encoding)
+      end
+      }.join;
+
+      Thread.new{
+      #GlobalPadding
+      if Value['proxies'][$count].key?('global-padding') then
+         global_padding = '${uci_set}global_padding=' + Value['proxies'][$count]['global-padding'].to_s
+         system(global_padding)
+      end
+      }.join;
+
+      Thread.new{
+      #authenticated_length
+      if Value['proxies'][$count].key?('authenticated-length') then
+         authenticated_length = '${uci_set}authenticated_length=' + Value['proxies'][$count]['authenticated-length'].to_s
+         system(authenticated_length)
+      end
+      }.join;
       
       Thread.new{
       #tls
@@ -788,9 +820,18 @@ do
       Thread.new{
       #alpn
       if Value['proxies'][$count].key?('alpn') then
-         alpn = '${uci_set}hysteria_alpn=\"' + Value['proxies'][$count]['alpn'].to_s + '\"'
-         system(alpn)
-      end
+         system '${uci_del}hysteria_alpn >/dev/null 2>&1'
+         if Value['proxies'][$count].key?('alpn').class.to_s != 'Array' then
+            alpn = '${uci_add}hysteria_alpn=\"' + Value['proxies'][$count]['alpn'].to_s + '\"'
+            system(alpn)
+         else
+            Value['proxies'][$count]['alpn'].each{
+            |x|
+               alpn = '${uci_add}hysteria_alpn=\"' + x.to_s + '\"'
+               system(alpn)
+            }
+         end
+      end;
       }.join
 
       Thread.new{
@@ -1090,7 +1131,7 @@ do
       config_load "openclash"
       config_list_foreach "config" "new_servers_group" cfg_new_servers_groups_get
    elif [ "$servers_if_update" != "1" ]; then
-      ruby -ryaml -E UTF-8 -e "
+      ruby -ryaml -rYAML -I "/usr/share/openclash" -E UTF-8 -e "
       Thread.new{
       begin
          Value = ${group_hash};
