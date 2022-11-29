@@ -13,7 +13,6 @@ Openclash Dependency
 
 * luci
 * luci-base
-* iptables
 * dnsmasq-full
 * coreutils
 * coreutils-nohup
@@ -22,38 +21,48 @@ Openclash Dependency
 * ca-certificates
 * ipset
 * ip-full
-* iptables-mod-tproxy
-* iptables-mod-extra
 * libcap
 * libcap-bin
 * ruby
 * ruby-yaml
-* kmod-tun(TUN mode)
-* luci-compat(Luci-19.07)
-* ip6tables-mod-nat(ipv6)
+* unzip
+* iptables(iptables)
+* kmod-ipt-nat(iptables)
+* iptables-mod-tproxy(iptables)
+* iptables-mod-extra(iptables)
+* kmod-tun(TUN模式)
+* luci-compat(Luci >= 19.07)
+* ip6tables-mod-nat(iptables-ipv6)
+* kmod-inet-diag(PROCESS-NAME)
+* kmod-nft-tproxy(Firewall4)
 
 
 Openclash compile
 ---
 
 
-OpenWrt [SDK](http://wiki.openwrt.org/doc/howto/obtain.firmware.sdk) compile
+OpenWrt [SDK](http://wiki.openwrt.org/doc/howto/obtain.firmware.sdk) compile and
+[SDK Download Link](https://archive.openwrt.org/snapshots/trunk/ar71xx/generic/OpenWrt-SDK-ar71xx-generic_gcc-5.3.0_musl-1.1.16.Linux-x86_64.tar.bz2)
+
 ```bash
+# system install depandence
 sudo apt-get install gawk libncurses5-dev libz-dev zlib1g-dev  git ccache
-# SDK
+
+# unzip SDK
 tar xjf OpenWrt-SDK-ar71xx-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
 cd OpenWrt-SDK-ar71xx-*
 
-# Clone
+# Clone this project
 mkdir package/luci-app-openclash
 cd package/luci-app-openclash
 git init
-git remote add -f origin https://github.com/vernesong/OpenClash.git
+git remote add -f origin https://github.com/lyymoo/luci-app.git
 git config core.sparsecheckout true
 echo "luci-app-openclash" >> .git/info/sparse-checkout
 git pull --depth 1 origin master
 git branch --set-upstream-to=origin/master master
 
+# compile po2lmo
 pushd luci-app-openclash/tools/po2lmo
 make && sudo make install
 popd
@@ -63,7 +72,7 @@ popd
 # back SDK
 cd ../..
 make package/luci-app-openclash/luci-app-openclash/compile V=99
-another app
+# another app
 make package/luci-app-clash/compile V=99
 
 # IPK location
