@@ -36,6 +36,17 @@ Openclash Dependency
 * kmod-inet-diag(PROCESS-NAME)
 * kmod-nft-tproxy(Firewall4)
 
+```bash
+opkg update
+opkg install luci luci-base dnsmasq-full coreutils coreutils-nohup bash \
+curl ca-certificates ipset ip-full libcap libcap-bin ruby ruby-yaml unzip \
+iptables kmod-ipt-nat iptables-mod-tproxy iptables-mod-extra kmod-tun \
+luci-compat ip6tables-mod-nat kmod-inet-diag kmod-nft-tproxy
+
+# install openclash
+opkg install --nodeps /tmp/luci-app-openclash_xxx.ipk
+```
+
 
 Openclash compile
 ---
@@ -44,6 +55,22 @@ Openclash compile
 OpenWrt [SDK](http://wiki.openwrt.org/doc/howto/obtain.firmware.sdk) compile and
 [SDK Download Link](https://archive.openwrt.org/snapshots/trunk/ar71xx/generic/OpenWrt-SDK-ar71xx-generic_gcc-5.3.0_musl-1.1.16.Linux-x86_64.tar.bz2)
 
+
+- compile OS can use Debian 11 or Ubuntu LTS
+
+```bash
+# install system depandence
+sudo apt update -y
+sudo apt full-upgrade -y
+sudo apt install -y ack antlr3 aria2 asciidoc autoconf automake autopoint binutils bison build-essential \
+bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib \
+git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.0-dev libgmp3-dev libltdl-dev \
+libmpc-dev libmpfr-dev libncurses5-dev libncursesw5-dev libreadline-dev libssl-dev libtool lrzsz \
+mkisofs msmtp nano ninja-build p7zip p7zip-full patch pkgconf python2.7 python3 python3-pip libpython3-dev qemu-utils \
+rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev
+```
+
+- Compile with Openwrt SDK
 ```bash
 # system install depandence
 sudo apt-get install gawk libncurses5-dev libz-dev zlib1g-dev  git ccache
@@ -72,18 +99,23 @@ popd
 # back SDK
 cd ../..
 make package/luci-app-openclash/luci-app-openclash/compile V=99
-# another app
-make package/luci-app-clash/compile V=99
 
 # IPK location
 ./bin/ar71xx/packages/base/luci-app-openclash_0.39.7-beta_all.ipk
 ```
+
+- Compile with Openwrt source code
 
 ```bash
 # pull code
 cd package/luci-app-openclash/luci-app-openclash
 git pull
 
+# You can also directly copy the `luci-app-openclash` folder to
+# the `Package` directory of other `OpenWrt` projects to
+# compile with the firmware
+
+# select LuCI -> Applications -> luci-app-openclash
 make menuconfig
 ```
 
@@ -129,4 +161,26 @@ info:
   > the ip address of the 192.168.1.0 network segment, and the browser  
   > will enter the breed gateway address 12.168.1.1 to enter  
   > the breed console. 
+
+#### Version Update
+
+```bash
+# Global Settings - Version Update
+luci-app-openclash/luasrc/view/openclash/update.htm
+Core path:/etc/openclash/core/clash
+Core path:/etc/openclash/core/clash_tun
+Core path:/etc/openclash/core/clash_meta
+Client Update
+# Check And Update
+core_update(this,'Dev')
+core_update(this,'TUN')
+core_update(this,'Meta')
+op_update(this) -> forbbiden update
+# Download
+ma_core_update(this,'Dev')
+ma_core_update(this,'TUN')
+ma_core_update(this,'Meta')
+ma_op_update(this) -> forbbiden download
+
+```
 
