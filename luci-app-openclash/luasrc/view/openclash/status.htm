@@ -421,7 +421,7 @@
 	get_rule_mode();
 	get_run_mode();
 	state_get();
-	clashversion_check();
+	//clashversion_check();
 
 	function get_rule_mode() {
 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "rule_mode")%>', null, function(x, status) {
