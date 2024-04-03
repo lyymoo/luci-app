@@ -1,0 +1,47 @@
+Index: luci-app-openclash/luasrc/view/openclash/update.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/luci-app-openclash/luasrc/view/openclash/update.htm b/luci-app-openclash/luasrc/view/openclash/update.htm
+--- a/luci-app-openclash/luasrc/view/openclash/update.htm	(revision c586c3e35bc23ed9b1efc3c5a4b6a034ed5e7567)
++++ b/luci-app-openclash/luasrc/view/openclash/update.htm	(date 1670126605811)
+@@ -333,6 +333,10 @@
+ 	function op_update(btn)
+     {
+         var r = release_branch.value;
++		var v = core_version.value;
++		console.log({core_ver: v, release_branch: r});
++		alert("Forbbiden Update");
++		return false;
+ 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "save_corever_branch")%>', {release_branch: r}, function(x, status) {
+ 		if (x && x.status == 200) {
+            XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "opupdate")%>', null, function(x, status) {
+@@ -391,6 +395,10 @@
+         btn.value    = '<%:Download%>';
+         btn.disabled = false;
+         var r = release_branch.value;
++		var v = core_version.value;
++		console.log({core_ver: v, release_branch: r});
++		alert("Forbbiden Download");
++		return false;
+ 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "save_corever_branch")%>', {release_branch: r}, function(x, status) {
+ 			if (x && x.status == 200) {
+ 			XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "update_ma")%>', status.oplv, function(x, status) {
+Index: luci-app-openclash/luasrc/view/openclash/status.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/luci-app-openclash/luasrc/view/openclash/status.htm b/luci-app-openclash/luasrc/view/openclash/status.htm
+--- a/luci-app-openclash/luasrc/view/openclash/status.htm	(revision c586c3e35bc23ed9b1efc3c5a4b6a034ed5e7567)
++++ b/luci-app-openclash/luasrc/view/openclash/status.htm	(date 1670127672834)
+@@ -421,7 +421,7 @@
+ 	get_rule_mode();
+ 	get_run_mode();
+ 	state_get();
+-	clashversion_check();
++	//clashversion_check();
+ 
+ 	function get_rule_mode() {
+ 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "rule_mode")%>', null, function(x, status) {

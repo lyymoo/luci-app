@@ -1,0 +1,898 @@
+Index: luci-app-openclash/root/www/luci-static/resources/openclash/img/Sponsor.svg
+===================================================================
+diff --git a/luci-app-openclash/root/www/luci-static/resources/openclash/img/Sponsor.svg b/luci-app-openclash/root/www/luci-static/resources/openclash/img/Sponsor.svg
+deleted file mode 100644
+--- a/luci-app-openclash/root/www/luci-static/resources/openclash/img/Sponsor.svg	(revision 6ff7ce21fb9ccd7517e14c12896c6907879ef1b5)
++++ /dev/null	(revision 6ff7ce21fb9ccd7517e14c12896c6907879ef1b5)
+@@ -1,1 +0,0 @@
+-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="73" height="20" role="img" aria-label="Sponsor: "><title>Sponsor: </title><style>a:hover #llink{fill:url(#b);stroke:#ccc}a:hover #rlink{fill:#4183c4}</style><linearGradient id="a" x2="0" y2="100%"><stop offset="0" stop-color="#fcfcfc" stop-opacity="0"/><stop offset="1" stop-opacity=".1"/></linearGradient><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#ccc" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><g stroke="#d5d5d5"><rect stroke="none" fill="#fcfcfc" x="0.5" y="0.5" width="72" height="19" rx="2"/></g><image x="5" y="3" width="14" height="14" xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkY1RTVCIiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+S28tZmk8L3RpdGxlPjxwYXRoIGQ9Ik0yMy44ODEgOC45NDhjLS43NzMtNC4wODUtNC44NTktNC41OTMtNC44NTktNC41OTNILjcyM2MtLjYwNCAwLS42NzkuNzk4LS42NzkuNzk4cy0uMDgyIDcuMzI0LS4wMjIgMTEuODIyYy4xNjQgMi40MjQgMi41ODYgMi42NzIgMi41ODYgMi42NzJzOC4yNjctLjAyMyAxMS45NjYtLjA0OWMyLjQzOC0uNDI2IDIuNjgzLTIuNTY2IDIuNjU4LTMuNzM0IDQuMzUyLjI0IDcuNDIyLTIuODMxIDYuNjQ5LTYuOTE2em0tMTEuMDYyIDMuNTExYy0xLjI0NiAxLjQ1My00LjAxMSAzLjk3Ni00LjAxMSAzLjk3NnMtLjEyMS4xMTktLjMxLjAyM2MtLjA3Ni0uMDU3LS4xMDgtLjA5LS4xMDgtLjA5LS40NDMtLjQ0MS0zLjM2OC0zLjA0OS00LjAzNC0zLjk1NC0uNzA5LS45NjUtMS4wNDEtMi43LS4wOTEtMy43MS45NTEtMS4wMSAzLjAwNS0xLjA4NiA0LjM2My40MDcgMCAwIDEuNTY1LTEuNzgyIDMuNDY4LS45NjMgMS45MDQuODIgMS44MzIgMy4wMTEuNzIzIDQuMzExem02LjE3My40NzhjLS45MjguMTE2LTEuNjgyLjAyOC0xLjY4Mi4wMjhWNy4yODRoMS43N3MxLjk3MS41NTEgMS45NzEgMi42MzhjMCAxLjkxMy0uOTg1IDIuNjY3LTIuMDU5IDMuMDE1eiIvPjwvc3ZnPg=="/><g aria-hidden="true" fill="#333" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" text-rendering="geometricPrecision" font-weight="700" font-size="110px" line-height="14px"><rect id="llink" stroke="#d5d5d5" fill="url(#a)" x=".5" y=".5" width="72" height="19" rx="2"/><text aria-hidden="true" x="445" y="150" fill="#fff" transform="scale(.1)" textLength="450">Sponsor</text><text x="445" y="140" transform="scale(.1)" textLength="450">Sponsor</text></g></svg>
+\ No newline at end of file
+Index: luci-app-openclash/root/www/luci-static/resources/openclash/img/Star.svg
+===================================================================
+diff --git a/luci-app-openclash/root/www/luci-static/resources/openclash/img/Star.svg b/luci-app-openclash/root/www/luci-static/resources/openclash/img/Star.svg
+deleted file mode 100644
+--- a/luci-app-openclash/root/www/luci-static/resources/openclash/img/Star.svg	(revision 6ff7ce21fb9ccd7517e14c12896c6907879ef1b5)
++++ /dev/null	(revision 6ff7ce21fb9ccd7517e14c12896c6907879ef1b5)
+@@ -1,1 +0,0 @@
+-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="20" role="img" aria-label="Star: "><title>Star: </title><style>a:hover #llink{fill:url(#b);stroke:#ccc}a:hover #rlink{fill:#4183c4}</style><linearGradient id="a" x2="0" y2="100%"><stop offset="0" stop-color="#fcfcfc" stop-opacity="0"/><stop offset="1" stop-opacity=".1"/></linearGradient><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#ccc" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><g stroke="#d5d5d5"><rect stroke="none" fill="#fcfcfc" x="0.5" y="0.5" width="48" height="19" rx="2"/></g><image x="5" y="3" width="14" height="14" xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMTgxNzE3IiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViPC90aXRsZT48cGF0aCBkPSJNMTIgLjI5N2MtNi42MyAwLTEyIDUuMzczLTEyIDEyIDAgNS4zMDMgMy40MzggOS44IDguMjA1IDExLjM4NS42LjExMy44Mi0uMjU4LjgyLS41NzcgMC0uMjg1LS4wMS0xLjA0LS4wMTUtMi4wNC0zLjMzOC43MjQtNC4wNDItMS42MS00LjA0Mi0xLjYxQzQuNDIyIDE4LjA3IDMuNjMzIDE3LjcgMy42MzMgMTcuN2MtMS4wODctLjc0NC4wODQtLjcyOS4wODQtLjcyOSAxLjIwNS4wODQgMS44MzggMS4yMzYgMS44MzggMS4yMzYgMS4wNyAxLjgzNSAyLjgwOSAxLjMwNSAzLjQ5NS45OTguMTA4LS43NzYuNDE3LTEuMzA1Ljc2LTEuNjA1LTIuNjY1LS4zLTUuNDY2LTEuMzMyLTUuNDY2LTUuOTMgMC0xLjMxLjQ2NS0yLjM4IDEuMjM1LTMuMjItLjEzNS0uMzAzLS41NC0xLjUyMy4xMDUtMy4xNzYgMCAwIDEuMDA1LS4zMjIgMy4zIDEuMjMuOTYtLjI2NyAxLjk4LS4zOTkgMy0uNDA1IDEuMDIuMDA2IDIuMDQuMTM4IDMgLjQwNSAyLjI4LTEuNTUyIDMuMjg1LTEuMjMgMy4yODUtMS4yMy42NDUgMS42NTMuMjQgMi44NzMuMTIgMy4xNzYuNzY1Ljg0IDEuMjMgMS45MSAxLjIzIDMuMjIgMCA0LjYxLTIuODA1IDUuNjI1LTUuNDc1IDUuOTIuNDIuMzYuODEgMS4wOTYuODEgMi4yMiAwIDEuNjA2LS4wMTUgMi44OTYtLjAxNSAzLjI4NiAwIC4zMTUuMjEuNjkuODI1LjU3QzIwLjU2NSAyMi4wOTIgMjQgMTcuNTkyIDI0IDEyLjI5N2MwLTYuNjI3LTUuMzczLTEyLTEyLTEyIi8+PC9zdmc+"/><g aria-hidden="true" fill="#333" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" text-rendering="geometricPrecision" font-weight="700" font-size="110px" line-height="14px"><rect id="llink" stroke="#d5d5d5" fill="url(#a)" x=".5" y=".5" width="48" height="19" rx="2"/><text aria-hidden="true" x="325" y="150" fill="#fff" transform="scale(.1)" textLength="210">Star</text><text x="325" y="140" transform="scale(.1)" textLength="210">Star</text></g></svg>
+\ No newline at end of file
+Index: luci-app-openclash/root/www/luci-static/resources/openclash/img/Telegram.svg
+===================================================================
+diff --git a/luci-app-openclash/root/www/luci-static/resources/openclash/img/Telegram.svg b/luci-app-openclash/root/www/luci-static/resources/openclash/img/Telegram.svg
+deleted file mode 100644
+--- a/luci-app-openclash/root/www/luci-static/resources/openclash/img/Telegram.svg	(revision 6ff7ce21fb9ccd7517e14c12896c6907879ef1b5)
++++ /dev/null	(revision 6ff7ce21fb9ccd7517e14c12896c6907879ef1b5)
+@@ -1,1 +0,0 @@
+-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77" height="20" role="img" aria-label="Telegram: "><title>Telegram: </title><style>a:hover #llink{fill:url(#b);stroke:#ccc}a:hover #rlink{fill:#4183c4}</style><linearGradient id="a" x2="0" y2="100%"><stop offset="0" stop-color="#fcfcfc" stop-opacity="0"/><stop offset="1" stop-opacity=".1"/></linearGradient><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#ccc" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><g stroke="#d5d5d5"><rect stroke="none" fill="#fcfcfc" x="0.5" y="0.5" width="76" height="19" rx="2"/></g><image x="5" y="3" width="14" height="14" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTIiIGZpbGw9IiMyY2E1ZTAiLz48cGF0aCBkPSJNOS44IDE3LjVjLS4zODkgMC0uMzIzLS4xNDctLjQ1Ny0uNTE3TDguMiAxMy4yMjEgMTcgOCIgZmlsbD0iI2E5YzlkZCIvPjxwYXRoIGQ9Ik05LjggMTcuNWMuMyAwIC40MzMtLjEzNy42LS4zbDEuNi0xLjU1Ni0xLjk5Ni0xLjIwMyIgZmlsbD0iI2M4ZGFlYSIvPjxwYXRoIGQ9Ik0xMC4wMDQgMTQuNDQxbDQuODM2IDMuNTczYy41NTIuMzA0Ljk1LjE0NyAxLjA4OC0uNTEybDEuOTY4LTkuMjc3Yy4yMDItLjgwOC0uMzA4LTEuMTc0LS44MzYtLjkzNUw1LjUwMSAxMS43NDhjLS43ODkuMzE2LS43ODQuNzU2LS4xNDQuOTUybDIuOTY3LjkyNiA2Ljg2Ny00LjMzMmMuMzI0LS4xOTcuNjIyLS4wOTEuMzc3LjEyNSIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="/><g aria-hidden="true" fill="#333" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" text-rendering="geometricPrecision" font-weight="700" font-size="110px" line-height="14px"><rect id="llink" stroke="#d5d5d5" fill="url(#a)" x=".5" y=".5" width="76" height="19" rx="2"/><text aria-hidden="true" x="465" y="150" fill="#fff" transform="scale(.1)" textLength="490">Telegram</text><text x="465" y="140" transform="scale(.1)" textLength="490">Telegram</text></g></svg>
+\ No newline at end of file
+Index: luci-app-openclash/luasrc/view/openclash/status.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/luci-app-openclash/luasrc/view/openclash/status.htm b/luci-app-openclash/luasrc/view/openclash/status.htm
+--- a/luci-app-openclash/luasrc/view/openclash/status.htm	(revision 6ff7ce21fb9ccd7517e14c12896c6907879ef1b5)
++++ b/luci-app-openclash/luasrc/view/openclash/status.htm	(date 1669739358715)
+@@ -39,30 +39,24 @@
+ 				<%
+ 					if uci:get("openclash", "config", "enable_meta_core") ~= '1' then
+ 				%>
+-	      				<img id="_logo" src="/luci-static/resources/openclash/img/logo.png?<%=random%>" loading="lazy" onload="return logo_check(this,this.src,'https://ftp.jaist.ac.jp/pub/sourceforge.jp/storage/g/o/op/openclash/<%=RELEASE_BRANCH%>/img/logo.png')" onerror="return imgerrorfuns(this,'https://ftp.jaist.ac.jp/pub/sourceforge.jp/storage/g/o/op/openclash/<%=RELEASE_BRANCH%>/img/logo.png')" title="Hello, World!" alt="OpenClash" onclick="return homepage()" />
++	      				<img id="_logo" src="/luci-static/resources/openclash/img/logo.png?<%=random%>" loading="lazy" title="Hello, World!" alt="OpenClash" />
+ 				<%
+ 					else
+ 				%>
+-						<img id="_logo" src="/luci-static/resources/openclash/img/meta.png?<%=random%>" loading="lazy" onload="return logo_check(this,this.src,'https://ftp.jaist.ac.jp/pub/sourceforge.jp/storage/g/o/op/openclash/<%=RELEASE_BRANCH%>/img/meta.png')" onerror="return imgerrorfuns(this,'https://ftp.jaist.ac.jp/pub/sourceforge.jp/storage/g/o/op/openclash/<%=RELEASE_BRANCH%>/img/meta.png')" title="Hello, World!" alt="OpenClash" onclick="return homepage()" />
++						<img id="_logo" src="/luci-static/resources/openclash/img/meta.png?<%=random%>" loading="lazy" title="Hello, World!" alt="OpenClash" />
+ 				<%
+ 					end
+ 				%>
+ 			</p>
+ 	  		<p id="_clashversion" style="margin: 10px 0; text-align: center">
+-				<img src="/luci-static/resources/openclash/img/version.svg?<%=random%>" onerror="return imgerrorfuns(this,'https://ftp.jaist.ac.jp/pub/sourceforge.jp/storage/g/o/op/openclash/<%=RELEASE_BRANCH%>/img/version.png')" alt="currentversion" height="21px" onclick="return go_update()">
++				<img src="/luci-static/resources/openclash/img/version.svg?<%=random%>" alt="currentversion" height="21px">
+ 	  		</p>
+ 	    </td></tr>
+ 	    <tr><td colspan="4" width="100%">
+      		<p style="margin: 10px 0; text-align: center">
+-				<img id="gitbook" src="/luci-static/resources/openclash/img/Wiki.svg?<%=random%>" loading="lazy" alt="GitBook" width="50px" height="20px" onerror="return imgerrorfuns(this,'https://img.shields.io/badge/Wiki--lightgrey?logo=GitBook&style=social')" onclick="return gitbookpage()" />
+-				&nbsp;&nbsp;&nbsp;
+-				<img id="wiki" src="/luci-static/resources/openclash/img/Tutorials.svg?<%=random%>" loading="lazy" alt="Wiki" width="75px" height="20px" onerror="return imgerrorfuns(this,'https://img.shields.io/badge/Tutorials--lightgrey?logo=Wikipedia&style=social')" onclick="return wikipage()" />
++				<img id="gitbook" src="/luci-static/resources/openclash/img/Wiki.svg?<%=random%>" loading="lazy" alt="GitBook" width="50px" height="20px" onclick="return gitbookpage()" />
+ 				&nbsp;&nbsp;&nbsp;
+-				<img id="star" src="/luci-static/resources/openclash/img/Star.svg?<%=random%>g" loading="lazy" alt="star" width="50px" height="20px" onerror="return imgerrorfuns(this,'https://img.shields.io/badge/Star--lightgrey?logo=github&style=social')" onclick="return homepage()" />
+-				&nbsp;&nbsp;&nbsp;
+-				<img id="telegram" src="/luci-static/resources/openclash/img/Telegram.svg?<%=random%>" loading="lazy" alt="Telegram" onerror="return imgerrorfuns(this,'https://img.shields.io/badge/Telegram--lightgrey?logo=Telegram&style=social')" onclick="return telegrampage()" />
+-				&nbsp;&nbsp;&nbsp;
+-				<img id="sponsor" src="/luci-static/resources/openclash/img/Sponsor.svg?<%=random%>" loading="lazy" alt="Sponsor" width="73px" height="20px" onerror="return imgerrorfuns(this,'https://img.shields.io/badge/Sponsor--lightgrey?logo=ko-fi&style=social')" onclick="return sponsorpage()" />
++				<img id="wiki" src="/luci-static/resources/openclash/img/Tutorials.svg?<%=random%>" loading="lazy" alt="Wiki" width="75px" height="20px" onclick="return wikipage()" />
+         	</p>
+         </td></tr>
+ 	    <tr><td width="100%" colspan="4">
+@@ -841,12 +835,6 @@
+         });
+     };
+     
+-    function homepage()
+-    {
+-        url3='https://github.com/vernesong/OpenClash';
+-        winOpen(url3);
+-    };
+-    
+     
+     function gitbookpage()
+     {
+@@ -859,60 +847,17 @@
+         url5='https://github.com/vernesong/OpenClash/wiki';
+         winOpen(url5);
+     };
+-    
+-    function telegrampage()
+-    {
+-        url6='https://t.me/ctcgfw_openwrt_discuss';
+-        winOpen(url6);
+-    };
+-    
+-    function sponsorpage()
+-    {
+-        url7='https://ko-fi.com/vernesong';
+-        winOpen(url7);
+-    };
+ 
+-	function logo_check(imgobj,imgSrc,imgNewSrc)
+-    {
+-		var newimg = new Image();
+-		newimg.src = imgNewSrc;
+-		newimg.onload = function() {
+-    		imgobj.src = imgNewSrc;
+-			imgobj.onload = function() {};
+-		};
+-		newimg.onerror = function() {
+-			imgobj.onload = function() {};
+-			imgerrorfuns(imgobj,imgSrc);
+-		};
+-    };
+-
+     function clashversion_check()
+     {
+     	XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "lastversion")%>', null, function(x, status) {
+     		if ( x && x.status == 200 ) {
+         		if ( status.lastversion != "" )
+         		{
+-            		clashversion.innerHTML = '<img id="lastver" src="'+status.lastversion+'" alt="lastversion" onerror="return clashversion_error()" onclick="return go_update()">';
++            		clashversion.innerHTML = '<img id="lastver" src="'+status.lastversion+'" alt="lastversion" />';
+         		}
+     		}
+     	});
+     };
+-
+-    function clashversion_error()
+-    {
+-        clashversion.innerHTML = '<img id="clashversion" src="/luci-static/resources/openclash/img/version.svg?<%=random%>" alt="currentversion" height="21px" onerror="return imgerrorfuns(this,\'https://ftp.jaist.ac.jp/pub/sourceforge.jp/storage/g/o/op/openclash/<%=RELEASE_BRANCH%>/img/version.png\')" onclick="return go_update()">';
+-    };
+-    
+-    function imgerrorfuns(imgobj,imgSrc){
+-    	setTimeout(function(){
+-        imgobj.src=imgSrc;
+-      },1000*10);
+-    };
+-     
+-    function go_update()
+-    {
+-       url4='https://github.com/vernesong/OpenClash/releases';
+-       winOpen(url4);
+-    };
+ //]]></script>
+ 
+Index: luci-app-openclash/po/zh-cn/openclash.zh-cn.po
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/luci-app-openclash/po/zh-cn/openclash.zh-cn.po b/luci-app-openclash/po/zh-cn/openclash.zh-cn.po
+--- a/luci-app-openclash/po/zh-cn/openclash.zh-cn.po	(revision 6ff7ce21fb9ccd7517e14c12896c6907879ef1b5)
++++ b/luci-app-openclash/po/zh-cn/openclash.zh-cn.po	(date 1669560626877)
+@@ -615,9 +615,9 @@
+ msgid "Update Core File"
+ msgstr "更新内核"
+ 
+-msgid "Download Form https://github.com/vernesong/OpenClash/releases/tag/Clash If Fail"
++msgid "Download Form GitHub If Fail"
+ msgstr ""
+-"如下载失败可前往 https://github.com/vernesong/OpenClash/releases/tag/Clash 手动下载并上传"
++"如下载失败可前往 GitHub 手动下载并上传"
+ 
+ msgid "Last OpenClash Version"
+ msgstr "最新客户端版本"
+Index: luci-app-openclash/luasrc/view/openclash/developer.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/luci-app-openclash/luasrc/view/openclash/developer.htm b/luci-app-openclash/luasrc/view/openclash/developer.htm
+--- a/luci-app-openclash/luasrc/view/openclash/developer.htm	(revision 6ff7ce21fb9ccd7517e14c12896c6907879ef1b5)
++++ b/luci-app-openclash/luasrc/view/openclash/developer.htm	(date 1669645514935)
+@@ -7,142 +7,12 @@
+ <fieldset class="cbi-section">
+ 	<div class="developer_">
+ 		<table width="100%"><tr><td>
+-		<span id="_Dreamacro"><%:Collecting data...%></span>
+-		<span id="_vernesong"><%:Collecting data...%></span>
+-		<span id="_frainzy1477"><%:Collecting data...%></span>
+-		<span id="_SukkaW"><%:Collecting data...%></span>
+-		<span id="_lhie1_dev"><%:Collecting data...%></span>
+-		<span id="_ConnersHua_dev"><%:Collecting data...%></span>
+-		<span id="_haishanh"><%:Collecting data...%></span>
+-		<span id="_MaxMind"><%:Collecting data...%></span>
+-		<span id="_FQrabbit"><%:Collecting data...%></span>
+-		<span id="_Alecthw"><%:Collecting data...%></span>
+-		<span id="_Tindy_X"><%:Collecting data...%></span>
+-		<span id="_lmc999"><%:Collecting data...%></span>
+-		<span id="_dlercloud"><%:Collecting data...%></span>
+-		<span id="_immortalwrt"><%:Collecting data...%></span>
+-		<span id="_MetaCubeX"><%:Collecting data...%></span>
++		<span>Hello, World.</span>
+ 		</td></tr></table>
+ 	</div>
+ </fieldset>
+ 
+ <script type="text/javascript">//<![CDATA[
+-	var Dreamacro = document.getElementById('_Dreamacro');
+-	var vernesong = document.getElementById('_vernesong');
+-	var frainzy1477 = document.getElementById('_frainzy1477');
+-	var SukkaW = document.getElementById('_SukkaW');
+-	var lhie1_dev = document.getElementById('_lhie1_dev');
+-	var ConnersHua_dev = document.getElementById('_ConnersHua_dev');
+-	var MaxMind = document.getElementById('_MaxMind');
+-	var haishanh = document.getElementById('_haishanh');
+-	var FQrabbit = document.getElementById('_FQrabbit');
+-	var Alecthw = document.getElementById('_Alecthw');
+-	var Tindy_X = document.getElementById('_Tindy_X');
+-	var dlercloud = document.getElementById('_dlercloud');
+-	var immortalwrt = document.getElementById('_immortalwrt');
+-	var lmc999 = document.getElementById('_lmc999');
+-	var MetaCubeX = document.getElementById('_MetaCubeX');
+-	var enable = document.getElementById('cbi-table-1-enable');
+-	var disable = document.getElementById('cbi-table-1-disable');
+-    Dreamacro.innerHTML = '<img src="https://avatars3.githubusercontent.com/u/8615343?s=460&v=4" loading="lazy" style="border-radius:50%;" title="Dreamacro" alt="Dreamacro" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return Dreamacro_rediret()" />';
+-    vernesong.innerHTML = '<img src="https://avatars2.githubusercontent.com/u/42875168?s=460&v=4" loading="lazy" style="border-radius:50%;" title="vernesong" alt="vernesong" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return vernesong_rediret()" />';
+-    frainzy1477.innerHTML = '<img src="https://avatars2.githubusercontent.com/u/49537471?s=460&v=4" loading="lazy" style="border-radius:50%;" title="frainzy1477" alt="frainzy1477" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return frainzy1477_rediret()" />';
+-    SukkaW.innerHTML = '<img src="https://avatars1.githubusercontent.com/u/40715044?s=460&v=4" loading="lazy" style="border-radius:50%;" title="SukkaW" alt="SukkaW" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return SukkaW_rediret()" />';
+-    lhie1_dev.innerHTML = '<img src="https://avatars1.githubusercontent.com/u/11873197?s=460&v=4" loading="lazy" style="border-radius:50%;" title="lhie1" alt="lhie1" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return lhie1_rediret()" />';
+-    ConnersHua_dev.innerHTML = '<img src="https://avatars1.githubusercontent.com/u/11730838?s=460&v=4" loading="lazy" style="border-radius:50%;" title="ConnersHua" alt="ConnersHua" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return ConnersHua_rediret()" />';
+-    MaxMind.innerHTML = '<img src="https://avatars3.githubusercontent.com/u/1181834?s=460&v=4" loading="lazy" style="border-radius:50%;" title="MaxMind" alt="MaxMind" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return MaxMind_rediret()" />';
+-    haishanh.innerHTML = '<img src="https://avatars1.githubusercontent.com/u/1166872?s=460&v=4" loading="lazy" style="border-radius:50%;" title="haishanh" alt="haishanh" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return haishanh_rediret()" />';
+-    FQrabbit.innerHTML = '<img src="https://avatars1.githubusercontent.com/u/29931248?s=460&v=4" loading="lazy" style="border-radius:50%;" title="FQrabbit" alt="FQrabbit" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return FQrabbit_rediret()" />';
+-    Alecthw.innerHTML = '<img src="https://avatars.githubusercontent.com/u/22856212?v=4" loading="lazy" style="border-radius:50%;" title="Alecthw" alt="Alecthw" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return Alecthw_rediret()" />';
+-    Tindy_X.innerHTML = '<img src="https://avatars0.githubusercontent.com/u/49061470?s=460&u=22a89312bf2de411e87340e04b5f9d149f7366cc&v=4" loading="lazy" style="border-radius:50%;" title="Tindy X" alt="Tindy X" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return Tindy_X_rediret()" />';
+-    dlercloud.innerHTML = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAAEcq2jCAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ4IDc5LjE2NDAzNiwgMjAxOS8wOC8xMy0wMTowNjo1NyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjFFQjY1RjRCMjJENDExRUM5NjlEQURCQTU4RDMyNUM3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjFFQjY1RjRDMjJENDExRUM5NjlEQURCQTU4RDMyNUM3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MUVCNjVGNDkyMkQ0MTFFQzk2OURBREJBNThEMzI1QzciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MUVCNjVGNEEyMkQ0MTFFQzk2OURBREJBNThEMzI1QzciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5CHITsAAACx1BMVEVjY2P+/v79/f1kZGT8/PwDAwMCAgIBAQFiYmIEBAT7+/tlZWX6+vpmZmZnZ2dhYWFpaWnb29toaGhaWlrh4eFgYGAFBQVXV1dNTU1qampVVVXi4uJcXFxYWFhfX19dXV1MTExZWVlsbGw7OztQUFBRUVFSUlLy8vJPT0/d3d0iIiL09PRWVlZUVFS6urqUlJTo6Oj5+fmLi4uxsbGYmJhLS0tzc3P39/fz8/M9PT1TU1OhoaHr6+sZGRkLCwsJCQk3NzdeXl6MjIzDw8N6enqoqKjOzs7V1dXAwMBKSkqjo6OFhYX29va5ublwcHDg4OAxMTFbW1szMzN7e3tCQkIYGBiPj4/c3NwwMDCNjY1FRUUrKystLS1JSUnl5eV3d3fW1tbw8PC/v7+2traJiYmVlZWenp7Nzc2amppOTk6ysrKmpqZubm5ISEh+fn42NjY8PDxHR0c4ODja2to5OTnf398QEBAkJCQfHx8WFhYgICAbGxvq6urt7e28vLwGBgZ0dHTn5+fZ2dnCwsJ4eHgMDAweHh41NTX19fV5eXns7OzY2NigoKAHBwfm5uYICAhvb2+7u7vv7+/MzMwODg5tbW3x8fElJSXKysoXFxdEREQTExOKioru7u6bm5t1dXWdnZ0yMjKpqamGhobS0tLIyMg+Pj6Hh4e3t7cjIyPQ0NAKCgoUFBTR0dEnJyd9fX2BgYEPDw8oKCj4+Pi+vr4sLCwVFRXj4+MdHR2vr686OjohISGQkJA/Pz+rq6unp6e1tbVDQ0OsrKywsLDJyckcHBzFxcWIiIiCgoLk5OTPz8+RkZGTk5Pp6enT09PGxsYaGhqXl5dycnKzs7PU1NSqqqrBwcF/f3+lpaVAQECEhITExMSWlpa0tLSDg4Otra18fHxBQUFGRkbe3t6ZmZlra2s0NDRxcXGioqIuLi4SEhIAAAD///+mEWvaAAAN20lEQVR42mJ4QwAwDE4FTPgVCDAAASNOBYx+QGkOBuYjuBS8ZuAF22KUgF3B69cEHEmEAia8Cl6/fp1GSAEbISsw7MBQ8JqgAia8cYFpBKkKuIAKGPHGJoYjsCjAb0IkATdgxhemAgJp8pAAAQWvh0jOQgUAATREFTDiTw/FwOzPLIwn0YKKBw4GBlwKXF4zbAAzFHFlHK03hDIvIQWsFJtAWAH+NLkRI1+RVYDgVcAIVBCJNzZZCRUgmhgFIXppT8gEoDPvEFLwhlIFBBIt49DMegABRFDBqAFUMIClVEGOQ048g0wDWDkYIICZGdKuIc2A3WxgzaIyLpF5siq8DMwmpBnA/rqfQ4MJf2LHZwC2gooEA5hAJchrRvIN4HtNoQtevybOBJwGzIEYYE22ASysxDmBQCwAQSL5SRlqgib5eYGYgMRrgDHEAFbycyPEAHYm8rMzOCrYKDCAcCAQMECdskCEOMGGEgO0CSZFQmGwhsJClYLyYLRmIh4ABGC/7pEIBsIwAGfXR37WTPwUhiEKf6NMZUbtAHqtUqPTchKdKxhHcAyNIjmEyCYKDfleCiMHyJPN7jfZ982BHPgdQAgIuNYtt91wJA+gTRTQ4pTmEQtYGWnMM9y1YFxtSj9u3auvMaCsQGkRv3yqDstm3ysoRZmAKKN0Das1emzf9jKUGRNKpfZ0oPtsgHkkYJDei4lfBE53YIQmVcUHyP5IVi4SCOBpfc4GynoPbAftCzs2MAvQuG9qoAyN8hu963XhOKNAINHGwl6BCNDGMtHP28QFKCks/LuxY4KlKxmmKhuQAQiEPRTwY8BHGgt2CrrC8+cgHcYQ/IQQBSQISGQFAvojxadgSyxolsCkOs7Teg78DXATgF37d2kYiOIAnrskd2ma2ErRUlR0UbEU6VoVLIggpYLoIgguioKbIFihXQVxcBLRWQQXB0Fd/BccXQRdHC9/hKY/c6IopnlvufsDmk+/d8nde0noH1AABVAABVAAr970rk0cv+ftrx9QAQCI97znurrebHJpbmpwnQACrnK6Jg3906KPTYMAiCfutO+HpRfG7cgBgpnJwP+3rITV6vT5OfTN25ECiqZghcZbaDcxulmtZ0Ib7dZaaXhEz8QTrzQqAM3XS5+kpsVzbz+8+aGkvJKdoZEAjEe/dmPXPcXFX1Y8jSQBmo412xAE5UFE0uZfX4FHAqBzXKAC2q0oYZZsBICx0AaIfpQEZnlHUKUIgM7lBat4uAAhJik8YI0FBfAJkLIUgUC4DSvBCNgtOIA4UgLmBYFOwNiQVgHLgh9K7ZeYJDgHPxUbGVOeBvBjORmSBOwMvC4gu9IsxE4d6MKELMuz4BBggOedBK/PDxBKsy49Ef8NoE8SYICCJ0CmAsuA98ID5KMBBsDY4sgJeIIjLkJ/7Le2JX6PAjC2WfhzSbgGRWs3OnJQAeYSRU2A34BvxxLATFEsAL30b8OHcLVBGABZZewQ/lgu9akwyvPODOx0o0WimtUKoAAKoADogA8B2DmXnSiCKAxT1dX3tjUj6GQM4IAarhJRLkZBlASCJqgBZYMxuFGEBYrGiBs1GI1RE19AIhs1Jl4SE+PGuHRtfAYTU/UQzkzDTNcgAaa7z9lUvUB/85/q02eq/nMUgAJQAApAASgABaAAFIACiAmA5BcWABWCfZ2fr57aoGkxGQAi6LG2TH2NZdXU72zqHt6ymywiAO1J70+5WmGgRW657vQRAeklE21dfsE3FZqrkb4OBuCcPTFbpZV72Sy3y2MgAM6zC365jS0QI/2DAgB4F/kvbR03nbWUPAD7abe4mvRUK2iazUVFS41sdi9WCsCuGTy71s1XtPOl5jZJUCEAa+acN2ir/kU321Y3+qnz1JmlmvZ9GdfVNNf/szmCygDo0/xBfUPwfDezbdAppOPAT8h+d0+f91P+4yQVyN9T9LuFX9/+cs0wCSrI2+1N/nhyAAsG5/qAVWXt2Dvx/+SbywSDN0YSAqBfClc1WS01flCsn3OYaH2Y0JyN4K6qYXZgo31GElGApoJba38MqyBZuazb7eEA0KOBAHoHQ1KgeF2KA+B9tFdDQHEUKHoW/qIAkBLAAkpZ7izbHNfW+8FABrBLto0JFGt3yEFmefAA5EHIuvMOIQR0T7ye2q0DVIcBjhNcAL2OIIeAY+8B3kvA34Jeyc3qM8w8gOMtF31m2Mr5jUEDsE7JT/scXAH6Qo7BFIEOgbwJjDl4gDnZUcyg3fVEzgT6LYSq2IwzGVXQX9AhxcDsw/pnVFy3oe189L6UCsxH4AqUSzBEgQFYrSzBZ3AFyiV4QoAB6LTc4tEIrQAplwA8BOKSJIE+SKEB5HSoT4IrIF7rMcWgQgD5/wHnDnyXjfxJusKgAZxX4WRkL3rgCkhvol1L4QH6Ql1/Zj/4WyDYdxO30ansg4ABcNfABWBvdFwAcgg7BAIdoMWMoSKI0ms2tqs4COAyQiYUzulSNj7MEABIa2kL9BCMPSAQ6wEZQG9kOACTK7nQGKIoAF6djVYVBwBWAKAfILgAkQ7rYgAw7iADRDsjiQ5g3BRYCjgn7ejHtZHywLlcSWIuO3gA+QDcEwIVIPJ5eVSAZoYH4Mzo/KqDqAAdtWeiz2SKEoL3ixgDkUJrLA4DQaTGZ4EMIBSAAlAACkABKAAFoAAUgAKIY/0ToL1zf42jiuL4zp3Zmc3szu52N4/dZNO802DMo82jNm0TE2wTTWNMaNIY7YPWqihpoGhFq0m1+MAXtdVarRWlVqQqglXxFxERFVF8IPjAH1RQEM/5I5zZ3bS7k50tSvbe2Zl7IYRJfsn97Hl859xzT5j/ARwAB8ABcAAcAAfAAXAAHAAHwAFwABwAB8ABcAAcAAfAAbgRgEAkKfOKnPnZ0QCIvlGhdO/t12iD0Yq25r7KimhNcPf+hR1r0790MgBC8MIP9XOxajEc1JLzevQv0fimBcWJKyuP/LZJtwaHAhAkJF2zN7cEw8lZSck5TmLGLK/UQLGaWGX3AwYopwEgGJje/Go47LFeYgqHqCXmenegIDgIgBDAkbem4mGfJ+8S0wh8If/q2fgqLERY9LCx/Q4oj9ZfZvvZE9VC/mjD12Tl4wEDACqOglw+US+KlrtNz3Ezr+DOwXGUihxAAIdAlmHDMdFvNT4vZKyysrJQJoiUN0Tqtu9DVSheACoeLTEuI56O+M0GkNytXwyVDSYqmmI9tbWxlubKaE1ZSPRrfk9yqp6RIzXP/MsrGQyoAiD45Qx4AWS4ut60e79WU93n++n7rq2drWsvOjoJrOl8YmRLxztirKV6UAv7DRgR7dG/V84RKAIQkMxCst9dUXoiF7fuCWrVbaHpc1cZk+IEYpZ+gv6jFJAzpzZe39fYtDoeidcd/BzVYgMgYZcsJ2+fKXA4Pb7TFxQbG0eHiZEZLmvVgpSEs+bUUGLD3OuxXUXWtSthGNIXIGWojRsf/V+JF3tfM/4P9X/OogJW3XpX5TYkRQNAwAsHl/avwFTQ73+ubebAyf8vcZOCQCgaCyA4PgVLN3BleP6I/4q2XagSZL88dPZ/oiTzJv5T3z1ZKGlvSwAStkPmBWwvDK20nrM1AAnHsvavA7jFTQAIfvNm9iQKL0SQuAaAgK0z2QagP33kIgAqipA9jEUHcJN7ABDcc8g0HUx/7L/NNgQKDyBoNgCAcvhqpaS83QEIePxeUwRImsCHj6E7dICK66AEli0Zpu1iAp4CG8D6+eUGYCTCWrtIQU+BI0AV5FwybLWJFio0gNLcALzQ424AOoEt9ogCrAAo8EGrLRIBoxgAem7YjQEXZIHOh8068JITjNhBDhYYgIDRXDoglQjuu98GTlBgIUTwaLmVCcjQ4HgXMJzgl1xKKB0GmgvfAcIagIpjy1+GLoWB35mrgYLXAyTcno8AczVQcAAEz1sFAeOMDD5lbAOFrwmq+IW1CejxYYxtMqRQFRZwIg8BL+xnagM0AAjkBisxkCQwypIAjYMRgo/fY5kLDQIvMYyEVI7GBNz0gnUk1AkE2dkArcPRt5/VCSiWBOqYiWJKx+MEhweMpGdJwMfKBmg1SBD81doHDAJnGRGg2CHynpw3DmxkQ4Bmj9DePE6gS6IfmSgiil1iEi7kMQEZ3j/JIhLS7BOUcF/eQOhh4QRUGyUl/NhaFOtoFhgQoNsqq+JZa0kowx/ocAswaoQJSxtQ4NCD9KMA/Xb5SUsbkKGb/ksBbQAExzdbESiHXvpHBdQtQMI3QFYs8sDkNuo+QN8FVNSsqgMKrKIuhugDEPDMaQtB5A4Augn8bGECsjsA6GGgIXcudAsAgsOKqy1Az3VxKHdvDDDiYGl/jjiowECVOwDoBJpyRIESCKEkuAKAin/m8AEv3Oh8KbyUB75dXOYDCvQ/RL8oxOj6vITXLvMBGT5x/OtwBoBnzAD0t+E9DKqCjAAQvPsfkw/IcMDxJbGsyojJB7wwv97pRdFsLRTKeiFQYPGE08viJgC+TACKDO1OPxjJC4Bdm4Q9AHhhHasWAVsA8MJ1zFok7ABAhjuc3iCRKw3uTANQ4JFShj3DzITQ05+lquNeSDi9Syy3FD6X0kEy3Mm2U5IZAM0AUAKTxxm3zHsYeYDRNCXD4fPOb5a2KIh0wyIMtNvg0gyjmmDgXYAO+vUvuwBQ8RU4ZovtMx2oaI/Fx+pyABwAB8ABcAAcAAfAAXAAHAAHwAFwABwAB8ABcAAcAAfAAbhp/Qu/xM20j6CqHwAAAABJRU5ErkJggg==" loading="lazy" style="border-radius:50%;" title="Dler Cloud" alt="Dler Cloud" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return dlercloud_rediret()" />';
+-    immortalwrt.innerHTML = '<img src="https://avatars.githubusercontent.com/u/82308430?v=4" loading="lazy" style="border-radius:50%;" title="immortalwrt" alt="immortalwrt" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return immortalwrt_rediret()" />';
+-    lmc999.innerHTML = '<img src="https://avatars.githubusercontent.com/u/39726914?v=4" loading="lazy" style="border-radius:50%;" title="lmc999" alt="lmc999" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return lmc999_rediret()" />';
+-    MetaCubeX.innerHTML = '<img src="https://avatars.githubusercontent.com/u/84378451?v=4" loading="lazy" style="border-radius:50%;" title="MetaCubeX" alt="MetaCubeX" width="50px" onerror="return imgerrorfun(this,this.src)" onclick="return MetaCubeX_rediret()" />';
+-  
+-    enable.style.textAlign="center";
+-    disable.style.textAlign="center";
+-    
+-	function Dreamacro_rediret()
+-    {
+-        url1='https://github.com/Dreamacro';
+-        window.open(url1);
+-    };
+-    function vernesong_rediret()
+-    {
+-        url2='https://github.com/vernesong';
+-        window.open(url2);
+-    };
+-    function frainzy1477_rediret()
+-    {
+-        url3='https://github.com/frainzy1477';
+-        window.open(url3);
+-    };
+-    function SukkaW_rediret()
+-    {
+-        url4='https://github.com/SukkaW';
+-        window.open(url4);
+-    };
+-    function lhie1_rediret()
+-    {
+-        url5='https://github.com/lhie1';
+-        window.open(url5);
+-    };
+-    function ConnersHua_rediret()
+-    {
+-        url6='https://github.com/ConnersHua';
+-        window.open(url6);
+-    };
+-    function MaxMind_rediret()
+-    {
+-        url9='https://dev.maxmind.com/geoip/geoip2/geolite2/';
+-        window.open(url9);
+-    };
+-    function haishanh_rediret()
+-    {
+-        url10='https://github.com/haishanh';
+-        window.open(url10);
+-    };
+-    function FQrabbit_rediret()
+-    {
+-        url11='https://github.com/FQrabbit';
+-        window.open(url11);
+-    };
+-    function Alecthw_rediret()
+-    {
+-        url12='https://github.com/alecthw';
+-        window.open(url12);
+-    };
+-    function Tindy_X_rediret()
+-    {
+-        url13='https://github.com/tindy2013';
+-        window.open(url13);
+-    };
+-    function dlercloud_rediret()
+-    {
+-        url14='https://bit.ly/32mrABp';
+-        window.open(url14);
+-    };
+-    function immortalwrt_rediret()
+-    {
+-        url15='https://github.com/immortalwrt';
+-        window.open(url15);
+-    };
+-    function lmc999_rediret()
+-    {
+-        url16='https://github.com/lmc999';
+-        window.open(url16);
+-    };
+-    function MetaCubeX_rediret()
+-    {
+-        url17='https://github.com/MetaCubeX';
+-        window.open(url17);
+-    };
+-    
+-    function imgerrorfun(imgobj,imgSrc){
+-       setTimeout(function(){
+-         imgobj.src=imgSrc;
+-       },1000*10);
+-     };
++
+ 
+ //]]></script>
+\ No newline at end of file
+Index: luci-app-openclash/luasrc/view/openclash/dlercloud.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/luci-app-openclash/luasrc/view/openclash/dlercloud.htm b/luci-app-openclash/luasrc/view/openclash/dlercloud.htm
+--- a/luci-app-openclash/luasrc/view/openclash/dlercloud.htm	(revision 6ff7ce21fb9ccd7517e14c12896c6907879ef1b5)
++++ b/luci-app-openclash/luasrc/view/openclash/dlercloud.htm	(date 1669646414768)
+@@ -49,7 +49,7 @@
+   top: 10%;
+   right: -2px;
+   height: 80%;
+-  border-left: 2px solid rgba(0,0,0,0.025);*/
++  border-left: 2px solid rgba(0,0,0,0.025);
+ }
+ 
+ .card .additional .user-card img {
+@@ -174,11 +174,9 @@
+   font-weight: bold;
+   display: inline-block;
+   overflow: hidden;
+-  -webkit-appearance:button;
+ }
+ 
+ .card .general .more {
+-  float: right;
+   top: 85%;
+   right: 20px;
+   font-size: 15px;
+@@ -197,7 +195,7 @@
+     <div id="additional" class="additional">
+       <div class="user-card">
+         <div class="img">
+-          <img id="dler_logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAAEcq2jCAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ4IDc5LjE2NDAzNiwgMjAxOS8wOC8xMy0wMTowNjo1NyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjFFQjY1RjRCMjJENDExRUM5NjlEQURCQTU4RDMyNUM3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjFFQjY1RjRDMjJENDExRUM5NjlEQURCQTU4RDMyNUM3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MUVCNjVGNDkyMkQ0MTFFQzk2OURBREJBNThEMzI1QzciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MUVCNjVGNEEyMkQ0MTFFQzk2OURBREJBNThEMzI1QzciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5CHITsAAACx1BMVEVjY2P+/v79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" loading="lazy" title="Dler Cloud" alt="Dler Cloud" onerror="return imgerrorfuns(this,this.src)" onclick="return show_more()" />
++          <img id="dler_logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANTSURBVHgBvVeNTdtAFH7vbCilUptuYFQihUhNzQQJEzSZoGSChgkIEwATNJ0AmICM4ISKWCKoHiGtVDUCn1/v2cRx4nNIcNRPgpzvnd/fvT8jLAnLsgrGVqEOQlaR0AYECwgKIRFhpNYeITkQYFeOf195njdahi8+K7hUsgzcaCPi51jgElDKdGTweOK5rgcvUYAtNl+/PVbLFuSBoDP/j3Hiec5oaQUiqzevFdGCNYAAPEkPBzpviPmNYrlsr1M4g3kxz2KxbGtoU6zb8nnoPBF7IIzyOeH8gvp/Gf2uCJUZRNRRK2e6FXnCsuxCSgEOuJTlBO3h4KZxP+jvKGbNWBFOu5AxdeO/aO9JMBwOb/vv792bJlBwNKsXWOYbeZx4jlxv4ubPlBG+2L+7c2ILLFtpPh4XslLLKtkWjGGUjHjeMzFI8fbpYYf5mPzAea5j+GjATOp4Tsg4s8B4ruPBkjDEBnuhKdgqBPyiPQSyBjlhZgS0qqZ1jgVhjGVddyCMWDC6kBP+FjgZQaxKu6wLFQU10GvQXsWlWeBrQwqaeqqoClXjP+lIciyuYE0Yuj+mWZIACrI5Da15Arssq3bngAdpQZZYpcPlApHOoIKA/wVEraFCezdhZbbX6xkCW7M7Yg94uvPGtqzCmrBbsmtaAoInKICelkY5B5EECOWhdj9AR0TNRKtCbXevkluJ4l7la1alZdlCbhmXujh4wuluuXIMOYSrlD7LonOtCbvhh71KRy0iLQlOwukW8HTSnrkuKFedEYne0HW6sEho0bbBDKqEcJgReJEYws6922s+teNpywzrtqQjuW10zYfgOs0EL4eDXkPHdLf88UJdeB2WgE9ih0t9WAd4oQSfh+yVPmjgN+77fiAaqUZC8jyTa0DZtCQLJWvSZ+JCJF+JdkIYj2ctPiRJHPALPF4p5VphXc/AIlpCuCf/ivbkeW4otdXMFsRzIfq+mohuHVgBKnNooXBlULLLpr4LeCwPyLyIA1B94QhCJyDxS2Dw7m7QP3+JAmEgo2goe2YMyvgwmfVEEsNBH1dVQGf5BNpmxAd5EuaUhJzg+FF3vp813CzshkO33+Z0UUy+w7LgohaO5tjhd5UhrbXMFtwdeXx/9py6vlU66T98qp4a9HCubgAAAABJRU5ErkJggg==" loading="lazy" title="Dler Cloud" alt="Dler Cloud" onerror="return imgerrorfuns(this,this.src)" onclick="return show_more()" />
+         </div>
+       </div>
+       <div class="more-info" id="more_info">
+@@ -240,12 +238,12 @@
+         	</div>
+         	<div style="width: 30%; text-align:center">
+         		<p style="margin: 30px 0 10px 39%">
+-        			<input type="button" class="btn" value="<%:Checkin%>" onclick="return dler_checkin_btn(this)"
+-        		</p>
++              <input type="button" class="btn" value="<%:Checkin%>" onclick="return dler_checkin_btn(this)" />
++            </p>
+         	</div>
+         </div>
+     		<div>
+-       	 <p class="more">Powered by <a style="text-decoration: none; color: #666" onclick="return web_dler()" href="javascript:void(0);">dlercloud.com</a></p>
++       	 <p class="more">Powered by <a style="text-decoration: none; color: #666" onclick="return web_dler()" href="javascript:void(0);">GitHub@dlercloud.com</a></p>
+     		</div>
+       </div>
+     </div>
+@@ -338,7 +336,7 @@
+ 	
+ function web_dler()
+ {
+-   url='https://bit.ly/32mrABp';
++   url='https://www.youtube.com';
+    window.open(url);
+ }
+        
+Index: luci-app-openclash/luasrc/view/openclash/myip.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/luci-app-openclash/luasrc/view/openclash/myip.htm b/luci-app-openclash/luasrc/view/openclash/myip.htm
+--- a/luci-app-openclash/luasrc/view/openclash/myip.htm	(revision 6ff7ce21fb9ccd7517e14c12896c6907879ef1b5)
++++ b/luci-app-openclash/luasrc/view/openclash/myip.htm	(date 1669738057454)
+@@ -1,366 +1,185 @@
+-
+ <!DOCTYPE html>
+ <html>
+ 
+ <head>
+     <meta charset="utf-8">
+-    <meta http-equiv="x-dns-prefetch-control" content="on">
+-    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+-    <link rel="dns-prefetch" href="//whois.pconline.com.cn/ipJson.jsp">
+-    <link rel="dns-prefetch" href="//www.taobao.com/help/getip.php">
+-    <link rel="dns-prefetch" href="//api-ipv4.ip.sb">
+-    <link rel="dns-prefetch" href="//api.ipify.org">
+-    <link rel="dns-prefetch" href="//api.ttt.sh">
+-    <link rel="dns-prefetch" href="//qqwry.api.skk.moe">
+-    <link rel="dns-prefetch" href="//d.skk.moe">
+-    <link rel="preconnect" href="https://www.taobao.com/help/getip.php">
+-    <link rel="preconnect" href="https://whois.pconline.com.cn/ipJson.jsp">
+-    <link rel="preconnect" href="https://api-ipv4.ip.sb">
+-    <link rel="preconnect" href="https://api.ipify.org">
+-    <link rel="preconnect" href="https://api.ttt.sh">
+-    <link rel="preconnect" href="https://qqwry.api.skk.moe">
+-    <link rel="preconnect" href="https://d.skk.moe">
+     <meta name="referrer" content="no-referrer">
+     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+-    <title>IP 地址查询</title>
++    <title>IP address</title>
+     <style>
+         .ip-title {
+             font-weight: bold;
+-            font-size:15px;
++            font-size: 15px;
+             display: inline-block;
+-            width: 25%;
++            width: 30%;
+             overflow: hidden;
+             text-overflow: ellipsis;
+-            vertical-align:bottom;
++            vertical-align: bottom;
+         }
+-        
++
+         .ip-state_title {
+             font-weight: bold;
+-            font-size:15px;
++            font-size: 15px;
+             display: inline-block;
+             width: 42%;
+-            vertical-align:bottom;
++            vertical-align: bottom;
+             overflow: hidden;
+             text-overflow: ellipsis;
+-            transform:translateY(5%);
++            transform: translateY(5%);
+         }
+-        
++
+         .ip-result {
+-            font-size:16px;
+-            margin:0px 0px 0px 5%;
+-            white-space: nowrap;  /*强制span不换行*/
+-            display: inline-block;  /*将span当做块级元素对待*/
+-            width: 25%;  /*限制宽度*/
+-            overflow: hidden;  /*超出宽度部分隐藏*/
+-            text-overflow: ellipsis;  /*超出部分以点号代替*/
+-            vertical-align:bottom;
+-            transform:translateY(8%);
++            font-size: 16px;
++            margin: 0px 0px 0px 0px;
++            white-space: nowrap;
++            /*强制span不换行*/
++            display: inline-block;
++            /*将span当做块级元素对待*/
++            width: 20%;
++            /*限制宽度*/
++            vertical-align: bottom;
++            transform: translateY(8%);
+         }
+-        
++
+         .ip-geo {
+-            font-size:15px;
+-            line-height:20px;
+-            white-space: nowrap;  /*强制span不换行*/
+-            display: inline-block;  /*将span当做块级元素对待*/
+-            width: 35%;  /*限制宽度*/
+-            overflow: hidden;  /*超出宽度部分隐藏*/
+-            text-overflow: ellipsis;  /*超出部分以点号代替*/
++            font-size: 15px;
++            line-height: 20px;
++            white-space: nowrap;
++            /*强制span不换行*/
++            display: inline-block;
++            /*将span当做块级元素对待*/
++            width: 40%;
++            /*限制宽度*/
+             text-align: right;
+-            vertical-align:bottom;
+-            transform:translateY(15%);
++            vertical-align: bottom;
++            transform: translateY(15%);
+         }
+-        
++
+         .ip-checking {
+-            font-size:15px;
+-            line-height:20px;
++            font-size: 15px;
++            line-height: 20px;
+             display: inline-block;
+-            vertical-align:bottom;
++            vertical-align: bottom;
+             width: 29%;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+-            transform:translateY(12%);
++            transform: translateY(12%);
+         }
+ 
+         .sk-text-success {
+             color: #32b643;
+-            font-size:15px;
+-            line-height:20px;
++            font-size: 15px;
++            line-height: 20px;
+             display: inline-block;
+-            vertical-align:bottom;
++            vertical-align: bottom;
+             width: 30%;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             text-align: left;
+-            transform:translateY(12%);
++            transform: translateY(12%);
+         }
+-        
++
+         .sk-load-success {
+-            font-size:15px;
+-            line-height:20px;
++            font-size: 15px;
++            line-height: 20px;
+             display: inline-block;
+-            vertical-align:bottom;
++            vertical-align: bottom;
+             width: 18%;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             text-align: right;
+-            transform:translateY(12%);
++            transform: translateY(12%);
+         }
+ 
+         .sk-text-error {
+             color: #e85600;
+-            font-size:15px;
+-            line-height:20px;
++            font-size: 15px;
++            line-height: 20px;
+             display: inline-block;
+-            vertical-align:bottom;
++            vertical-align: bottom;
+             width: 30%;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             text-align: left;
+-            transform:translateY(12%);
++            transform: translateY(12%);
+         }
+     </style>
+ </head>
++
+ <body>
+-<fieldset class="cbi-section">
+-	<table width="100%">
+-     <tr><td>
+-    <div style="display: flex">
+-        <div style="width: 51%">
+-            <h3 style="margin: 10px -2% 10px 2%"><%:IP Address%></h3>
+-            <p style="margin: 10px -2% 10px 2%">
+-                <span class="ip-title">IP.TB&nbsp;&nbsp;&nbsp;&nbsp;<%:Mainland%>:</span><span class="ip-result" id="ip-taobao"></span> <span class="ip-geo" id="ip-taobao-geo"></span>
+-            </p>
+-            <p style="margin: 10px -2% 10px 2%">
+-                <span class="ip-title">IP.PC&nbsp;&nbsp;&nbsp;&nbsp;<%:Mainland%>:</span><span class="ip-result" id="ip-pcol"></span> <span class="ip-geo" id="ip-pcol-geo"></span>
+-            </p>
+-            <p style="margin: 10px -2% 10px 2%">
+-                <span class="ip-title">IP.SB&nbsp;&nbsp;&nbsp;&nbsp;<%:Abroad%>:</span><span class="ip-result" id="ip-ipsb"></span> <span class="ip-geo" id="ip-ipsb-geo"></span>
+-            </p>
+-            <p style="margin: 10px -2% 10px 2%">
+-                <span class="ip-title">IPIFY&nbsp;&nbsp;&nbsp;&nbsp;<%:Abroad%>:</span><span class="ip-result" id="ip-ipify"></span> <span class="ip-geo" id="ip-ipify-geo"></span>
+-            </p>
+-        </div>
+-        <div style="width: 49%">
+-            <h3 style="margin: 10px 0 10px 5%"><%:Website Access Check%></h3>
+-            <p style="margin: 10px 0 10px 5%">
+-                <span class="ip-state_title"><%:Baidu Search%>:</span><span id="http-baidu"></span><span id="ldtime-baidu"></span>
+-            </p>
+-            <p style="margin: 10px 0 10px 5%">
+-                <span class="ip-state_title"><%:NetEase Music%>:</span><span id="http-163"></span><span id="ldtime-163"></span>
+-            </p>
+-            <p style="margin: 10px 0 10px 5%">
+-                <span class="ip-state_title">GitHub:</span><span id="http-github"></span><span id="ldtime-github"></span>
+-            </p>
+-            <p style="margin: 10px 0 10px 5%">
+-                <span class="ip-state_title">YouTube:</span><span id="http-youtube"></span><span id="ldtime-youtube"></span>
+-            </p>
+-        </div>
+-    </div>
+-    <div>
+-        <p style="float: right; margin: 5px 10px 10px 0; font-size:15px">Powered by <a style="text-decoration: none; color: #666" onclick="return ip_skk()" href="javascript:void(0);">ip.skk.moe</a></p>
+-    </div>
+-    </td></tr>
+-	</table>
+-</fieldset>
++    <fieldset class="cbi-section">
++        <table width="100%">
++            <tr>
++                <td>
++                    <div style="display: flex">
++                        <div style="width: 51%">
++                            <h3 style="margin: 10px -2% 10px 2%">
++                                <%:IP Address%>
++                            </h3>
++                            <p style="margin: 10px -2% 10px 2%">
++                                <span class="ip-title">淘宝IP检测&nbsp;&nbsp;&nbsp;&nbsp;<%:Mainland%>:</span>
++                                <span class="ip-result" id="ip-taobao">https://www.taobao.com/help/getip.php?callback=ipCallback</span>
++                                <span class="ip-geo" id="ip-taobao-geo"></span>
++                            </p>
++                            <p style="margin: 10px -2% 10px 2%">
++                                <span class="ip-title">太平洋电脑网&nbsp;&nbsp;&nbsp;&nbsp;<%:Mainland%>:</span>
++                                <span class="ip-result" id="ip-pcol">https://whois.pconline.com.cn/ipJson.jsp?callback=getPcolIP&z=</span>
++                                <span class="ip-geo" id="ip-pcol-geo"></span>
++                            </p>
++                            <p style="margin: 10px -2% 10px 2%">
++                                <span class="ip-title">国际IP.SP&nbsp;&nbsp;&nbsp;&nbsp;<%:Abroad%>:</span>
++                                <span class="ip-result" id="ip-ipsb">https://api-ipv4.ip.sb/jsonip?callback=getIpsbIP</span>
++                                <span class="ip-geo" id="ip-ipsb-geo"></span>
++                            </p>
++                            <p style="margin: 10px -2% 10px 2%">
++                                <span class="ip-title">国际IPIFY.ORG&nbsp;&nbsp;&nbsp;&nbsp;<%:Abroad%>:</span>
++                                <span class="ip-result" id="ip-ipify">https://api.ipify.org/?format=json&z=</span>
++                                <span class="ip-geo" id="ip-ipify-geo"></span>
++                            </p>
++                        </div>
++                        <div style="width: 49%">
++                            <h3 style="margin: 10px 0 10px 5%">
++                                <%:Website Access Check%>
++                            </h3>
++                            <p style="margin: 10px 0 10px 5%">
++                                <span class="ip-state_title">
++                                    <%:Baidu Search%>:
++                                </span>
++                                <span id="http-baidu">https://www.baidu.com/favicon.ico</span>
++                                <span id="ldtime-baidu"></span>
++                            </p>
++                            <p style="margin: 10px 0 10px 5%">
++                                <span class="ip-state_title">
++                                    <%:NetEase Music%>:
++                                </span>
++                                <span id="http-163">https://s1.music.126.net/style/favicon.ico</span>
++                                <span id="ldtime-163"></span>
++                            </p>
++                            <p style="margin: 10px 0 10px 5%">
++                                <span class="ip-state_title">GitHub:</span>
++                                <span id="http-github">https://github.com/style/favicon.ico</span>
++                                <span id="ldtime-github"></span>
++                            </p>
++                            <p style="margin: 10px 0 10px 5%">
++                                <span class="ip-state_title">YouTube:</span>
++                                <span id="http-youtube">https://www.youtube.com/style/favicon.ico</span>
++                                <span id="ldtime-youtube"></span>
++                            </p>
++                        </div>
++                    </div>
++                    <div>
++                        <p style="float: right; margin: 5px 10px 10px 0; font-size:15px">查看网络地址 https://ip.skk.moe</p>
++                    </div>
++                </td>
++            </tr>
++        </table>
++    </fieldset>
+ </body>
+-    <script>
+-        function ip_skk()
+-       {
+-        url2='https://ip.skk.moe';
+-        window.open(url2);
+-       }
+-        const $$ = document;
+-        $$.getElementById('ip-pcol').innerHTML = '<%:Querying...%>';
+-        $$.getElementById('ip-ipify').innerHTML = '<%:Querying...%>';
+-        $$.getElementById('ip-taobao').innerHTML = '<%:Querying...%>';
+-        $$.getElementById('ip-ipsb').innerHTML = '<%:Querying...%>';
+-        let random = parseInt(Math.random() * 100000000);
+-        let IP = {
+-            get: (url, type) =>
+-                fetch(url, { method: 'GET' }).then((resp) => {
+-                    if (type === 'text')
+-                        return Promise.all([resp.ok, resp.status, resp.text(), resp.headers]);
+-                    else {
+-                        return Promise.all([resp.ok, resp.status, resp.json(), resp.headers]);
+-                    }
+-                }).then(([ok, status, data, headers]) => {
+-                    if (ok) {
+-                        let json = {
+-                            ok,
+-                            status,
+-                            data,
+-                            headers
+-                        }
+-                        return json;
+-                    } else {
+-                        throw new Error(JSON.stringify(json.error));
+-                    }
+-                }).catch(error => {
+-                    throw error;
+-                }),
+-            parseIPIpip: (ip, elID) => {
+-                const v4 = '(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)){3}';
+-                const v4Exact = new RegExp(`^${v4}$`);
+-                const anonymizedIp = (() => {
+-                    if (v4Exact.test(ip)) {
+-                        const [a, b, c] = ip.split('.');
+-                        return `${a}.${b}.${c}.0`;
+-                    }
+-                    return ip;
+-                })();
+-
+-                fetch(`https://qqwry.api.skk.moe/${anonymizedIp}`, {
+-                referrerPolicy: 'no-referrer-when-downgrade',
+-                }).then(r => r.json())
+-                .then(resp => {
+-                    $$.getElementById(elID).innerHTML = resp.geo;
+-                    //$$.getElementById(elID).innerHTML = `${resp.data.country} ${resp.data.regionName} ${resp.data.city} ${resp.data.isp}`;
+-                })
+-            },
+-            getIpipnetIP: () => {
+-                IP.get(window.location.protocol+`//myip.ipip.net/?z=${random}`, 'text')
+-                    .then((resp) => {
+-                        let data = resp.data.replace('当前 IP：', '').split(' 来自于：');
+-                        $$.getElementById('ip-ipipnet').innerHTML = `${data[0]}`;
+-                        $$.getElementById('ip-ipipnet-geo').innerHTML = `${data[1]}`;
+-                    });
+-            },
+-            getIPApiIP: () => {
+-                IP.get(`https://ipapi.co/json?z=${random}`, 'json')
+-                    .then(resp => {
+-                        $$.getElementById('ip-ipapi').innerHTML = resp.data.ip;
+-                        IP.parseIPIpip(resp.data.ip, 'ip-ipapi-geo');
+-                    })
+-            },
+-            getSpeedIP: () => {
+-                IP.get(`https://forge.speedtest.cn/api/location/info?z=${random}`, 'json')
+-                    .then(resp => {
+-                        $$.getElementById('ip-speedtest').innerHTML = resp.data.ip;
+-                        $$.getElementById('ip-speedtest-geo').innerHTML = resp.data.country + resp.data.province + resp.data.city + (resp.data.distinct == "null" ? resp.data.distinct : '') + ' '  + (resp.data.isp == "null" ? resp.data.isp : '');
+-                        //IP.parseIPIpip(resp.data.ip, 'ip-speedtest-geo');
+-                    })
+-            },
+-            getIpifyIP: () => {
+-                IP.get(`https://api.ipify.org/?format=json&z=${random}`, 'json')
+-                .then(resp => {
+-                	$$.getElementById('ip-ipify').innerHTML = resp.data.ip;
+-                	return resp.data.ip;
+-                })
+-                .then(ip => {
+-                	IP.parseIPIpip(ip, 'ip-ipify-geo');
+-                })
+-            }
+-        };
+-        
+-        $$.getElementById('http-baidu').innerHTML = '<span class="ip-checking"><%:Testing...%></span>';
+-        $$.getElementById('http-163').innerHTML =  '<span class="ip-checking"><%:Testing...%></span>';
+-        $$.getElementById('http-github').innerHTML = '<span class="ip-checking"><%:Testing...%></span>';
+-        $$.getElementById('http-youtube').innerHTML = '<span class="ip-checking"><%:Testing...%></span>';
+-        let HTTP = {
+-            checker: (domain, cbElID, cbLoID) => {
+-                let img = new Image;
+-                let img_start_time = (+new Date());
+-                let timeout = setTimeout(() => {
+-                    img.onerror = img.onload = null;
+-                    $$.getElementById(cbLoID).style.display = 'none';
+-                    $$.getElementById(cbElID).innerHTML = '<span class="sk-text-error"><%:Access Timed Out%></span>'
+-                }, 5000);
+-
+-                img.onerror = () => {
+-                    clearTimeout(timeout);
+-                    $$.getElementById(cbLoID).style.display = 'none';
+-                    $$.getElementById(cbElID).innerHTML = '<span class="sk-text-error"><%:Access Denied%></span>'
+-                }
+-
+-                img.onload = () => {
+-                    clearTimeout(timeout);
+-                    let img_load_time = (new Date())- img_start_time;
+-                    if ($$.getElementById(cbLoID).style.display == 'none') {
+-                    	$$.getElementById(cbLoID).style.display = '';
+-                    }
+-                    if (img_load_time <= 500) {
+-                    	$$.getElementById(cbLoID).innerHTML = '<span class="sk-load-success">' + img_load_time + ' ms</span>'
+-                    	$$.getElementById(cbLoID).style.color = '#32b643';
+-                    }
+-                    else if (img_load_time > 500 && img_load_time <= 1000) {
+-                    	$$.getElementById(cbLoID).innerHTML = '<span class="sk-load-success">' + img_load_time + ' ms</span>'
+-                    	$$.getElementById(cbLoID).style.color = 'orange';
+-                    }
+-                    else {
+-                    	$$.getElementById(cbLoID).innerHTML = '<span class="sk-load-success">' + img_load_time + ' ms</span>'
+-                    	$$.getElementById(cbLoID).style.color = '#e85600';
+-                    }
+-                    $$.getElementById(cbElID).innerHTML = '<span class="sk-text-success"><%:Access Normal%></span>'
+-                }
+-
+-                img.src = `https://${domain}/favicon.ico?${+(new Date)}`
+-            },
+-            runcheck: () => {
+-                HTTP.checker('www.baidu.com', 'http-baidu', 'ldtime-baidu');
+-                HTTP.checker('s1.music.126.net/style', 'http-163', 'ldtime-163');
+-                HTTP.checker('github.com', 'http-github', 'ldtime-github');
+-                HTTP.checker('www.youtube.com', 'http-youtube', 'ldtime-youtube');
+-            }
+-        };
+-
+-
+-        function getPcolIP(data){
+-            let pcisp = data.addr.split(' ');
+-            $$.getElementById('ip-pcol').innerHTML = data.ip;
+-            $$.getElementById('ip-pcol-geo').innerHTML = `${data.pro}${data.city}${data.region} ${pcisp[1]}`;
+-        };
+-
+-        function getIpsbIP(data){
+-            $$.getElementById('ip-ipsb').innerHTML = data.ip;
+-            IP.parseIPIpip(data.ip, 'ip-ipsb-geo');
+-        };
+-        
+-        function ipCallback(data){
+-            $$.getElementById('ip-taobao').innerHTML = data.ip;
+-            IP.parseIPIpip(data.ip, 'ip-taobao-geo');
+-        };
+-	      
+-        function myip_Load()
+-        {
+-            var pcip = document.getElementsByTagName('HEAD').item(0);
+-            var pcipScript= document.createElement("script");
+-            var random = parseInt(Math.random() * 100000000);
+-            pcipScript.defer = "defer";
+-            pcipScript.src=`https://whois.pconline.com.cn/ipJson.jsp?callback=getPcolIP&z=${random}`;
+-            pcip.appendChild(pcipScript);
+-            
+-            var sbip = document.getElementsByTagName('HEAD').item(0);
+-            var sbipScript= document.createElement("script");
+-            sbipScript.defer = "defer";
+-            sbipScript.src='https://api-ipv4.ip.sb/jsonip?callback=getIpsbIP';
+-            sbip.appendChild(sbipScript);
+-            
+-            var tbip = document.getElementsByTagName('HEAD').item(0);
+-            var tbipScript= document.createElement("script");
+-            tbipScript.defer = "defer";
+-            tbipScript.src='https://www.taobao.com/help/getip.php?callback=ipCallback';
+-            tbip.appendChild(sbipScript);
+-            
+-            //HTTP.runcheck();
+-            IP.getIpifyIP();
+-            //IP.getSpeedIP();
+-        }
+-
+-        HTTP.runcheck();
+-        IP.getIpifyIP();
+-        //IP.getSpeedIP();
+-        setInterval("HTTP.runcheck()", Math.floor(Math.random()*(10-5+1)+5)*1000);
+-        setInterval("myip_Load()", Math.floor(Math.random()*(30-10+1)+10)*1000);
+-        
+-
+-    </script>
+-    <script type="text/javascript">
+-        document.write('<script defer="defer" src="https://whois.pconline.com.cn/ipJson.jsp?callback=getPcolIP&z='+parseInt(Math.random() * 100000000)+'" type="text/javascript"><\/script>');
+-    </script>
+-    <script defer="defer" src="https://api-ipv4.ip.sb/jsonip?callback=getIpsbIP"></script>
+-    <script defer="defer" src="https://www.taobao.com/help/getip.php?callback=ipCallback"></script>
+-</html>
++<script>
++</script>
++
++</html>
+\ No newline at end of file
+Index: luci-app-openclash/luasrc/view/openclash/dler_login.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/luci-app-openclash/luasrc/view/openclash/dler_login.htm b/luci-app-openclash/luasrc/view/openclash/dler_login.htm
+--- a/luci-app-openclash/luasrc/view/openclash/dler_login.htm	(revision 6ff7ce21fb9ccd7517e14c12896c6907879ef1b5)
++++ b/luci-app-openclash/luasrc/view/openclash/dler_login.htm	(date 1669645947750)
+@@ -97,8 +97,8 @@
+ 	
+ function web_dler(btn)
+ {
+-	btn.disabled = true;
+-  url='https://bit.ly/32mrABp';
++  btn.disabled = true;
++  url='https://www.google.com';
+   window.open(url);
+   btn.disabled = false;
+   return false;
